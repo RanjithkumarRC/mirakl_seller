@@ -1,0 +1,174 @@
+CREATE DATABASE mirakl_seller;
+
+/* Create table script - tbl_stores */
+/* Beging */
+CREATE TABLE `tbl_stores` (
+  `tbl_stores_id` int(11) NOT NULL AUTO_INCREMENT,
+  `storehash` varchar(50) NOT NULL,
+  `bc_store_id` varchar(50) NOT NULL,
+  `bc_store_url` varchar(256) DEFAULT NULL,
+  `access_token` varchar(256) NOT NULL,
+  `username` varchar(256) NOT NULL,
+  `email` varchar(256) NOT NULL,
+  `account_uuid` varchar(256) NOT NULL,
+  `mirakl_api_url` varchar(256) DEFAULT NULL,
+  `mirakl_seller_api_key` varchar(256) DEFAULT NULL,
+  `shop_id` int(11) DEFAULT NULL,
+  `is_active` tinyint(1) NOT NULL,
+  `is_deleted` tinyint(1) NOT NULL,
+  `created_at` varchar(50) NOT NULL,
+  `updated_at` varchar(50) NOT NULL,
+  PRIMARY KEY (`tbl_stores_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1
+
+/* end */
+
+/* Create table script - tbl_bc_mirakl_products */
+/* Beging */
+
+CREATE TABLE `tbl_bc_mirakl_products` (
+  `tbl_bc_mirakl_product_id` int(11) NOT NULL AUTO_INCREMENT,
+  `mirakl_product_id` varchar(256) DEFAULT NULL,
+  `product_name` varchar(256) NOT NULL,
+  `product_sku` varchar(256) NOT NULL,
+  `bc_product_id` int(50) NOT NULL,
+  `category_code` varchar(256) DEFAULT NULL,
+  `main_image` varchar(256) DEFAULT NULL,
+  `tbl_stores_id` int(11) DEFAULT NULL,
+  `mirakl_product_vgc` varchar(256) DEFAULT NULL,
+  `is_variant` int(1) DEFAULT '0',
+  `variant_sku` varchar(256) DEFAULT NULL,
+  `variant_id` varchar(256) DEFAULT NULL,
+  `sync_status` varchar(256) DEFAULT NULL,
+  `is_update` int(1) DEFAULT '0',
+  `is_error` int(1) DEFAULT '0',
+  `product_report_status` varchar(256) DEFAULT NULL,
+  `shop_id` int(11) DEFAULT NULL,
+  `is_active` tinyint(1) NOT NULL,
+  `is_deleted` tinyint(1) NOT NULL,
+  `created_at` varchar(256) NOT NULL,
+  `updated_at` varchar(256) DEFAULT NULL,
+  PRIMARY KEY (`tbl_bc_mirakl_product_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=103 DEFAULT CHARSET=latin1
+
+/* end */
+
+/* Create table script - tbl_bc_mirakl_offers */
+/* Beging */
+
+CREATE TABLE `tbl_bc_mirakl_offers` (
+  `tbl_bc_mirakl_offer_id` int(11) NOT NULL AUTO_INCREMENT,
+  `tbl_bc_mirakl_product_id` int(11) DEFAULT NULL,
+  `mirakl_product_id` varchar(256) DEFAULT NULL,
+  `tbl_stores_id` int(11) DEFAULT NULL,
+  `tbl_import_id` int(11) DEFAULT NULL,
+  `offer_name` varchar(256) NOT NULL,
+  `offer_sku` varchar(256) NOT NULL,
+  `is_variant` int(1) DEFAULT '0',
+  `variant_sku` varchar(256) DEFAULT NULL,
+  `price` varchar(256) DEFAULT NULL,
+  `discount_price` varchar(256) DEFAULT NULL,
+  `sync_status` varchar(256) DEFAULT NULL,
+  `is_update` int(1) DEFAULT '0',
+  `is_error` int(1) DEFAULT '0',
+  `offer_report_status` varchar(256) DEFAULT NULL,
+  `shop_id` int(11) DEFAULT NULL,
+  `is_active` tinyint(1) NOT NULL,
+  `is_deleted` tinyint(1) NOT NULL,
+  `created_at` varchar(256) NOT NULL,
+  `updated_at` varchar(256) DEFAULT NULL,
+  `quantity` int(11) DEFAULT NULL,
+  PRIMARY KEY (`tbl_bc_mirakl_offer_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=77 DEFAULT CHARSET=latin1
+
+/* end */
+
+/* Create table script - tbl_seller_mirakl_orders */
+/* Beging */
+
+CREATE TABLE `tbl_seller_mirakl_orders` (
+  `tbl_seller_mirakl_orders_id` int(11) NOT NULL AUTO_INCREMENT,
+  `mirakl_order_id` varchar(256) NOT NULL,
+  `mirakl_order_status` varchar(256) NOT NULL,
+  `tbl_stores_id` int(11) DEFAULT NULL,
+  `sync_status_bc` varchar(50) DEFAULT NULL,
+  `sync_status_mirakl` varchar(50) DEFAULT NULL,
+  `is_update_mirakl` int(1) DEFAULT '0',
+  `updated_at_mirakl` varchar(256) DEFAULT NULL,
+  `bc_order_id` varchar(50) DEFAULT NULL,
+  `bc_order_status` varchar(256) DEFAULT NULL,
+  `updated_at_bc` varchar(256) DEFAULT NULL,
+  `is_update_bc` int(1) DEFAULT '0',
+  `created_at` varchar(50) NOT NULL,
+  PRIMARY KEY (`tbl_seller_mirakl_orders_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=80 DEFAULT CHARSET=latin1
+
+/* end */
+
+/* Create table script - tbl_seller_productToMirakl_files */
+/* Beging */
+
+CREATE TABLE `tbl_seller_productToMirakl_files` (
+  `tbl_seller_productToMirakl_files_id` int(11) NOT NULL AUTO_INCREMENT,
+  `import_id` varchar(50) NOT NULL,
+  `file_name` varchar(100) DEFAULT NULL,
+  `file_url` varchar(256) DEFAULT NULL,
+  `sync_status` varchar(100) DEFAULT NULL,
+  `shop_id` varchar(50) NOT NULL,
+  `tbl_stores_id` int(11) DEFAULT NULL,
+  `is_active` tinyint(1) NOT NULL,
+  `is_deleted` tinyint(1) NOT NULL,
+  `created_at` varchar(50) NOT NULL,
+  `updated_at` varchar(50) NOT NULL,
+  PRIMARY KEY (`tbl_seller_productToMirakl_files_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=257 DEFAULT CHARSET=latin1
+
+/* end */
+
+/* Create table script - tbl_seller_productToMirakl_files */
+/* Beging */
+
+CREATE TABLE `tbl_bc_mirakl_product_archives` (
+  `tbl_bc_mirakl_product_archive_id` int(11) NOT NULL AUTO_INCREMENT,
+  `tbl_bc_mirakl_product_id` int(11) NOT NULL,
+  `mirakl_product_id` varchar(256) DEFAULT NULL,
+  `product_name` varchar(256) NOT NULL,
+  `product_sku` varchar(256) NOT NULL,
+  `bc_product_id` int(50) NOT NULL,
+  `category_code` varchar(256) DEFAULT NULL,
+  `main_image` varchar(256) DEFAULT NULL,
+  `tbl_stores_id` int(11) DEFAULT NULL,
+  `mirakl_product_vgc` varchar(256) DEFAULT NULL,
+  `is_variant` int(1) DEFAULT '0',
+  `variant_sku` varchar(256) DEFAULT NULL,
+  `variant_id` varchar(256) DEFAULT NULL,
+  `sync_status` varchar(256) DEFAULT NULL,
+  `is_update` int(1) DEFAULT '0',
+  `is_error` int(1) DEFAULT '0',
+  `product_report_status` varchar(256) DEFAULT NULL,
+  `shop_id` int(11) DEFAULT NULL,
+  `is_active` tinyint(1) NOT NULL,
+  `is_deleted` tinyint(1) NOT NULL,
+  `created_at` varchar(256) NOT NULL,
+  `updated_at` varchar(256) DEFAULT NULL,
+  `deleted_at` varchar(256) DEFAULT NULL,
+  PRIMARY KEY (`tbl_bc_mirakl_product_archive_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1
+
+/* end */
+
+/* Create trigger script - before_mirakl_product_delete */
+/* Beging */
+
+DELIMITER $$
+
+CREATE TRIGGER before_mirakl_product_delete
+BEFORE DELETE
+ON tbl_bc_mirakl_products FOR EACH ROW
+BEGIN
+  INSERT INTO tbl_bc_mirakl_product_archives(tbl_bc_mirakl_product_id,mirakl_product_id,product_name,product_sku,bc_product_id,category_code,main_image,tbl_stores_id,mirakl_product_vgc,is_variant,variant_sku,variant_id,sync_status,is_update,is_error,product_report_status,shop_id,is_active,is_deleted,created_at,updated_at,deleted_at) VALUES (OLD.tbl_bc_mirakl_product_id,OLD.mirakl_product_id,OLD.product_name,OLD.product_sku,OLD.bc_product_id,OLD.category_code,OLD.main_image,OLD.tbl_stores_id,OLD.mirakl_product_vgc,OLD.is_variant,OLD.variant_sku,OLD.variant_id,OLD.sync_status,OLD.is_update,OLD.is_error,OLD.product_report_status,OLD.shop_id,OLD.is_active,OLD.is_deleted,OLD.created_at,OLD.updated_at,CURRENT_TIMESTAMP());
+END$$
+
+DELIMITER ;
+
+/* end */

@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="include/css/bootstrap.min.css">
+        <link rel="stylesheet" href="include/css/style.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="include/js/bootstrap.bundle.min.js"></script>
+        <script src="include/js/jquery.min.js"></script>
+        <script src="include/js/bootstrap.min.js"></script>
+        <script src="include/js/script.js"></script>
+        <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <title>RC Mirakl Connector - Seller</title>
+    </head>
+    <body class="footer-relative">
+        <div class="main-wrapper cust_loader cust_loader_off">
+          <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button>
+        </div>
+        <div class="db__wraper" id="body-pd">
+          <header class="header" id="header">
+            <div class="header_toggle">
+              <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+            <div class="header_toggle">
+              <a href="dashboard?data={{storehash}}">RC Mirakl Connector - Seller</a>
+            </div>
+            <div class="header_img">
+              <a href="settings?data={{storehash}}">
+                <i class='bx bxs-cog'></i>
+              </a>
+            </div>
+          </header>
+          <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+              <div>
+                <div class="nav_list">
+                  <a href="product-sync-BCtoMirakl?data={{storehash}}" class="nav_link">
+                    <i class='bx bx-cube'></i>
+                    <span class="nav_name">Seller-Product-sync</span>
+                  </a>
+                  <a href="offer-sync-BCtoMirakl?data={{storehash}}" class="nav_link">
+                    <i class='bx bxs-offer'></i>
+                    <span class="nav_name">Seller-Offer-sync</span>
+                  </a>
+                  <a href="order-sync-BCtoMirakl?data={{storehash}}" class="nav_link">
+                    <i class='bx bx-cart-add'></i>
+                    <span class="nav_name">Seller-Order-sync</span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <!--Container Main start-->
+          <main class="col-md-11 ms-sm-auto col-lg-12 px-md-1">
+            <input type="hidden" id="cust_data" name="cust_data" value="{{storehash}}">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+              <h1 class="h2 page-title txt-upp">Seller Product Sync</h1>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="card widget-flat mb-3">
+                      <div class="card-body">
+                        <h4 class="header-title mb-3">Summary</h4>
+                        <div class="summarybar_wrrpaer">
+                          <div class="summarybar_content">
+                            <h5>Mapping CSV file</h5>
+                            <a href="javascript:void(0);" class="product_csv_download">
+                              <div class="d-flex align-items-center border border-medium rounded p-2 mb-2">
+                                <div class="flex-shrink-0 me-2">
+                                  <i class='bx bx-sync bx-sm widget-icon rounded-circle'></i>
+                                </div>
+                                
+                                <span class="fw-semibold">Download CSV</span>    
+                              </div>
+                            </a>
+                          </div> 
+                        </div>
+                        </br>
+                        <div class="summarybar_wrrpaer">
+                          <div class="summarybar_content">
+                            <h5>Product (BC to Mirakl)</h5>
+                            <a href="javascript:void(0);" class="product_sync_bc_mirakl">
+                              <div class="d-flex align-items-center border border-medium rounded p-2 mb-2">
+                                <div class="flex-shrink-0 me-2">
+                                  <i class='bx bx-sync bx-sm widget-icon rounded-circle'></i>
+                                </div>
+                                
+                                <span class="fw-semibold">Synchronize</span>    
+                              </div>
+                            </a>
+                          </div> 
+                        </div>
+                        </br>
+                        <div class="summarybar_wrrpaer">
+                          <div class="summarybar_content">
+                            <h5>Product Import Status Sync</h5>
+                            <a href="javascript:void(0);" class="product_import_status_sync">
+                              <div class="d-flex align-items-center border border-medium rounded p-2 mb-2">
+                                <div class="flex-shrink-0 me-2">
+                                  <i class='bx bx-sync bx-sm widget-icon rounded-circle'></i>
+                                </div>
+                                
+                                <span class="fw-semibold">Synchronize</span>    
+                              </div>
+                            </a>
+                          </div> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="card widget-flat mb-3">
+                      <div class="card-body">
+                          <div class="table-responsive">
+                              <table class="table table-striped table-centered mb-0" id="product-table">
+                                  <thead>
+                                      <tr>
+                                          <th>Sl. No</th>
+                                          <th>File Name</th>
+                                          <th>Created</th>
+                                          <th>Import ID</th>
+                                          <th>Sync Status</th>
+                                          <th>Action/Status</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                    {{#each import_files_array}}
+                                      <tr>
+                                          <td class="align-middle">{{index}}</td>
+                                          <td class="align-middle"><a href="{{file_url}}" target="_blank">{{file_name}}</a></td>
+                                          <td class="align-middle">{{created}}</td>
+                                          <td class="table-user align-middle">{{import_id}}</td>
+                                          <td class="align-middle">{{sync_status}}</td>
+                                          <td class="align-middle">
+                                            <!-- <button type="button" data-id="{{import_id}}" class="btn btn-info view_info">View</button> -->
+                                            <a class="btn btn-primary view_info" data-id="{{import_id}}" data-bs-toggle="modal" href="#exampleModalToggle" role="button">View</a></td>
+                                      </tr>
+                                    {{/each}}
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+<!-- Modal start -->
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel">Seller Product Sync Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">File Name</th>
+                <th scope="col">Import ID</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="importProductStatus">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal End -->
+        </div>
+        <footer class="border-top footer">
+            <p class="text-center text-muted">Copyright ©2023 Royal Cyber Inc. All Rights Reserved.</p>
+        </footer>
+    </body>
+    <script>
+        $(document).ready(function(){
+          var cust_data = $('#cust_data').val();
+          var current_storehash = {data:cust_data};
+            $('#product-table').DataTable({});
+
+            $(".product_sync_bc_mirakl").on("click",function(){
+              $('.cust_loader').addClass('cust_loader_on');
+              $('.cust_loader').removeClass('cust_loader_off');
+              $.ajax({url: "https://apps.royalcyber.org/mirakl_seller/crons/create_product_BCtoMirakl.php", data: current_storehash, success: function(result){
+                alert(result);
+                $('.cust_loader').removeClass('cust_loader_on');
+                $('.cust_loader').addClass('cust_loader_off');
+                location.reload(true);
+              }});
+            });
+
+            $("body").on("click", ".product_import_status_sync", function(event){
+              $('.cust_loader').addClass('cust_loader_on');
+              $('.cust_loader').removeClass('cust_loader_off');
+              $.ajax({url: "https://apps.royalcyber.org/mirakl_seller/crons/product_bc_mirakl_sync_status.php", data: current_storehash, success: function(result){
+                $('.cust_loader').removeClass('cust_loader_on');
+                $('.cust_loader').addClass('cust_loader_off');
+                location.reload(true);
+              }});
+            });
+
+            // $(".view_info").on("click",function(){
+            $("body").on("click", ".view_info", function(event){
+              $("#importProductStatus").empty();
+              var import_id = $(this).attr('data-id');
+              var datas = {data:cust_data,data_id:import_id};
+              $('.cust_loader').addClass('cust_loader_on');
+              $('.cust_loader').removeClass('cust_loader_off');
+              $.ajax({url: "https://apps.royalcyber.org/mirakl_seller/api/get_seller_product_import_status.php", data: datas, success: function(result){
+                var import_product_status = JSON.parse(result);
+                var file_url_link = import_product_status.file_url;
+                var file_url_1 = file_url_link.replace(/\\/g, "");
+                var file_url = file_url_1.replace("/var/www/html", "");
+                var importProductStatus = '';
+                
+                importProductStatus += '<tr><th scope="row"><a href="'+file_url+'" target="_blank">'+import_product_status.file_name+'</a></th><td>'+import_product_status.import_id+'</td><td><div class="label__st">';
+                if(import_product_status.import_status == 'COMPLETE'){
+                  importProductStatus += '<span class="label grn_color">'+import_product_status.import_status+'</span>';
+                }else{
+                  importProductStatus += '<span class="label org_color">'+import_product_status.import_status+'</span>';
+                }
+                importProductStatus += '<ul class="label__msg"><li>Lines read: '+import_product_status.transformed_lines_read+'</li><li>Lines success: '+import_product_status.transform_lines_in_success+'</li>';
+                if(import_product_status.transform_lines_in_error != 0){
+                  importProductStatus += '<li class="text-danger">Lines with errors: '+import_product_status.transform_lines_in_error+'</li>';
+                }
+                if(import_product_status.transform_lines_with_warning != 0){
+                  importProductStatus += '<li class="text-warning">Lines with warnings: '+import_product_status.transform_lines_with_warning+'</li>';
+                }
+                if(import_product_status.import_status == 'COMPLETE'){
+                  if(import_product_status.products_successfully_synchronized != 0){
+                    importProductStatus += '<li>Synchronized products: '+import_product_status.products_successfully_synchronized+'</li>';
+                  }
+                  if(import_product_status.products_with_synchronization_issues != 0){
+                    importProductStatus += '<li class="text-warning">Products with synchronization Issues: '+import_product_status.products_with_synchronization_issues+'</li>';
+                  }
+                  if(import_product_status.products_not_synchronized_in_time != 0){
+                    importProductStatus += '<li class="text-danger">Products not synchronized on time: '+import_product_status.products_not_synchronized_in_time+'</li>';
+                  }
+                  if(import_product_status.invalid_products != 0){
+                    importProductStatus += '<li class="text-danger">Invalid products: '+import_product_status.invalid_products+'</li>';
+                  }
+                  if(import_product_status.products_not_accepted_in_time != 0){
+                    importProductStatus += '<li class="text-danger">Products not accepted in time: '+import_product_status.products_not_accepted_in_time+'</li>';
+                  }
+                  if(import_product_status.products_with_wrong_identifiers != 0){
+                    importProductStatus += '<li class="text-danger">Products with invalid identifiers: '+import_product_status.products_with_wrong_identifiers+'</li>';
+                  }
+                  if(import_product_status.rejected_products != 0){
+                    importProductStatus += '<li class="text-danger">Rejected products: '+import_product_status.rejected_products+'</li>';
+                  }
+                }
+                importProductStatus += '</ul></div></td><td><div class="files_dwnld">';
+                if(import_product_status.error_report == true){
+                  importProductStatus += '<a href="javascript:void(0);" class="download_report" data-src="error_report" data-id="'+import_id+'"><i class="bx bx-download"/><span>Download the integration error report</span></a>';
+                }
+                if(import_product_status.transformation_error_report == true){
+                  importProductStatus += '<a href="javascript:void(0);" class="download_report" data-src="transformation_error_report" data-id="'+import_id+'"><i class="bx bx-download"/><span>Download transformation error report</span></a>';
+                }
+                if(import_product_status.transformed_file == true){
+                  importProductStatus += '<a href="javascript:void(0);" class="download_report" data-src="transformed_file" data-id="'+import_id+'"><i class="bx bx-download"/><span>Download transformed file</span></a>';
+                }
+                if(import_product_status.new_product_report == true){
+                  importProductStatus += '<a href="javascript:void(0);" class="download_report" data-src="new_product_report" data-id="'+import_id+'"><i class="bx bx-download"/><span>Download added products report</span></a>';
+                }
+                importProductStatus += '</div></td></tr>';
+                $("#importProductStatus").html(importProductStatus);
+                $('.cust_loader').removeClass('cust_loader_on');
+                $('.cust_loader').addClass('cust_loader_off');
+              }});
+            });
+
+            $("body").on("click", ".download_report", function(event){
+              var import_id = $(this).attr('data-id');
+              var report    = $(this).attr('data-src');
+              var datas     = {data:cust_data,report:report,data_id:import_id};
+              var downloadUrl = "https://apps.royalcyber.org/mirakl_seller/api/get_import_product_reports.php?data_id="+import_id+"&report="+report+"&data="+cust_data;
+              // window.location.href = downloadUrl;
+              window.open(downloadUrl, '_blank');
+            });
+
+            $("body").on("click", ".product_csv_download", function(event){
+              var import_id = $(this).attr('data-id');
+              var report    = $(this).attr('data-src');
+              var datas     = {data:cust_data,report:report,data_id:import_id};
+              $.ajax({url: "https://apps.royalcyber.org/mirakl_seller/api/generate_category_mapping_csv.php", data: current_storehash, success: function(result){
+                if(result != ''){
+                  var file_url_link = result;
+                  var file_url_1 = file_url_link.replace(/\\/g, "");
+                  var file_url = file_url_1.replace("/var/www/html", "");
+                  var downloadUrl = "https://apps.royalcyber.org"+file_url;
+                  // window.location.href = downloadUrl;
+                  window.open(downloadUrl, '_blank');
+                }else{
+                  alert(result);
+                }
+              }});
+            });
+        });
+    </script>
+</html>

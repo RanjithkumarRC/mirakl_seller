@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="../include/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../include/css/style.css">
+
+        <script src="../include/js/bootstrap.bundle.min.js"></script>
+        <script src="../include/js/jquery.min.js"></script>
+        <script src="../include/js/bootstrap.min.js"></script>
+        <script src="../include/js/script.js"></script>
+        <title>Mirakl App Connector - Installation Guide</title>
+    </head>
+    <body>
+        <div class="main-wrapper cust_loader cust_loader_off">
+          <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button>
+        </div>
+        <div class="db__wraper" id="body-pd">
+            <header class="header" id="header">
+              <div class="header_toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+              </div>
+              <div class="header_toggle">
+                <a href="javascript:void(0);">RC Marketplace Connector</a>
+              </div>
+              <div class="header_img">
+                <a href="javascript:void(0);">
+                  <!-- <i class='bx bxs-cog'></i> -->
+                </a>
+              </div>
+            </header>
+            <div class="l-navbar" id="nav-bar">
+                <nav class="nav">
+                  <div>
+                    <div class="nav_list">
+                      <a href="https://apps.royalcyber.org/mirakl_seller/applp/installation-guide.html" class="nav_link">
+                          <i class='bx bx-cube'></i>
+                        <span class="nav_name">Installation Guide</span>
+                      </a>
+                      <a href="https://apps.royalcyber.org/mirakl_seller/applp/user-guide.html" class="nav_link">
+                          <i class='bx bx-cart-add'></i>
+                        <span class="nav_name">User Guide</span>
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            <!--Container Main start-->
+            <main class="col-md-11 ms-sm-auto col-lg-12 px-md-1 installation-guide">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2 lp-title">Installation Guide</h1>
+                </div>
+                <h4 class="lp-subtitle">Introduction:</h4>
+                <p>Go to the 'Mirakl Connector' BigCommerce page and click on Get This app button. A page will open where you should click on Install. Click on the confirm button. Please wait for the Klevu Search app to get installed.</p>
+                <br/>
+
+                <h4 class="lp-subtitle">Integration Steps for App:</h4>
+                <ol>
+                    <li>
+                        <p>Login into your BigCommerce Admin Panel.</p>
+                    </li>
+                    <li>
+                        <p>Go to the ‘Mirakl Connector’ BigCommerce App page and click on <b>Get this App</b> button.</p>
+                    </li>
+                    <li>
+                        <p>A page will open, where you should click on <b>Install</b>.</p>
+                        <img src="../include/image/installation-guide/app-install-1.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Click on the <b>Confirm</b> button</p>
+                        <img src="../include/image/installation-guide/app-install-2.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Please wait for the 'Mirakl connector' app to get installed. Once the app is installed, you should see the 'Mirakl and BC Configuration Form'.</p>
+                        <img src="../include/image/installation-guide/app-install-3.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Get the Mirakl Credentials (I.e., Mirakl API URL and Front API key) and enter the credentials in respective input boxes and click the <b>Connection check</b> button</p>
+                        <img src="../include/image/installation-guide/app-install-4.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Once your connection is validated successfully, then click on the <b>Save Credentials</b> button.</p>
+                        <img src="../include/image/installation-guide/app-install-5.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Once the credentials are saved you should see the Dashboard page</p>
+                        <img src="../include/image/installation-guide/app-install-6.jpg" class='reference-img'/>
+                    </li>
+                </ol>
+                <br/>
+
+                <h4 class="lp-subtitle">Initial synchronization:</h4>
+                <ol>
+                    <li>
+                        <p>In your BigCommerce store you must delete all the Category and Products present in your BigCommerce store.</p>
+                    </li>
+                    <li>
+                        <p>First you need to synchronize the Category from Mirakl to BigCommerce by clicking the <b>Category Sync</b> button and wait for complete the synchronization process. Once synchronization is completed you can see the synchronized categories in your BigCommerce Product Categories menu.</p>
+                        <img src="../include/image/installation-guide/app-install-7.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Next you need to synchronize the Products from Mirakl to BigCommerce by clicking the <b>Product sync</b> button and wait for the synchronization process to complete. Once synchronization is completed you can see the synchronized products in your BigCommerce Product View menu</p>
+                        <img src="../include/image/installation-guide/app-install-8.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Once the synchronization process is done, it will show Initial Sync done like below.</p>
+                        <img src="../include/image/installation-guide/app-install-9.jpg" class='reference-img'/>
+                    </li>
+                </ol>
+                <p class="imp-note"><b>Note:</b></p>
+                <ul>
+                    <li>
+                        <p>During this synchronization process please do not refresh or close the browser tab until the synchronization process is complete.</p>
+                    </li>
+                    <li>
+                        <p>For the synchronization process, it will take some time to synchronize based on the category and products present in your Mirakl store</p>
+                    </li>
+                </ul> 
+                <br/>
+
+                <h4 class="lp-subtitle">Integration Steps for Checkout:</h4>
+                <ol>
+                    <li>
+                        <p>Login into your BigCommerce Admin Panel.</p>
+                    </li>
+                    <li>
+                        <p>Go to the settings menu, under <b>Advanced</b> click on the <b>Checkout</b> menu</p>
+                        <img src="../include/image/installation-guide/app-install-10.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>A checkout setting page will open, Under <b>General Settings</b> in <b>Checkout Type</b> you need to select <b>Custom Checkout</b>.</p>
+                        <img src="../include/image/installation-guide/app-install-11.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>In the Checkout setting page under <b>Custom Checkout Settings</b> in <b>Script URL</b> you need to place this URL <b>'http://127.0.0.1:8080/auto-loader-dev.js'</b> and need to check only 'This checkout supports Optimized One-Page Checkout settings' & uncheck the 'Use the same script URL for the custom order confirmation page' checkbox. Like the below screenshot.</p>
+                        <img src="../include/image/installation-guide/app-install-12.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Save the settings page.</p>
+                    </li>
+                </ol>
+                <br/>
+
+                <h4 class="lp-subtitle">Integration Steps for Account Sign Up form:</h4>
+                <ol>
+                    <li>
+                        <p>Login into your BigCommerce Admin Panel.</p>
+                    </li>
+                    <li>
+                        <p>Go to the settings menu, under <b>Advanced</b> click on the <b>Account sign up form</b> menu</p>
+                        <img src="../include/image/installation-guide/app-install-13.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>A Form Fields page will open, Under <b>Address Fields</b>, create a new text field <b>'Mirakl Shipping'</b> and save it and it should not be a required field. Like the below screenshot.</p>
+                        <img src="../include/image/installation-guide/app-install-14.jpg" class='reference-img'/>
+                    </li>
+                </ol>
+                <br/>
+
+                <h4 class="lp-subtitle">Integration Steps for Shipping:</h4>
+                <ol>
+                    <li>
+                        <p>Login into your BigCommerce Admin Panel.</p>
+                    </li>
+                    <li>
+                        <p>Go to the settings menu, under <b>Setup</b> click on the <b>Shipping</b> menu.</p>
+                        <img src="../include/image/installation-guide/app-install-15.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Need to create a shipping zone based on the Mirakl shipping zone.</p>
+                    </li>
+                    <li>
+                        <p>Need to enable free shipping method or anyone shipping method for each shipping zone created.</p>
+                    </li>
+                </ol>
+                <br/>
+
+                <h4 class="lp-subtitle">BigCommerce Cornerstone Theme Level Code Changes:</h4>
+                <ul>
+                    <li>
+                        <p>Login into your BigCommerce Admin Panel->Storefront->Themes->Advanced->Download Cornerstone Theme.</p>
+                        <img src="../include/image/installation-guide/app-install-16.png" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>To fetch and display the data from Mirakl through our Mirakl Connector App in the BigCommerce front end we need to update the original cornerstone theme.</p>
+                    </li>
+                    <li>
+                        <p>With BigCommerce Stencil themes, developers can access all the advantages of a hosted platform via a reusable template called 'Cornerstone'. It is a platform which developers can use to build their custom template and then publish it as BigCommerce's custom interface.</p>
+                    </li>
+                    <li>
+                        <p>This way, developers save a lot of time, as Cornerstone theme comes all-included with various elements of an ecommerce template.</p>
+                    </li>
+                    <li>
+                        <p><b>Installation of Stencil CLI (Command Line Interface)</b> Users can install Cornerstone theme on their local server with the help of Stencil CLI program. Once installed, users can easily get access to the theme files, make customizations, package the custom template, and publish it onto BigCommerce’s live merchant account.</p>
+                    </li>
+                    <li>
+                        <p>For this entire setup, Stencil CLI makes use of NodeJS.</p>
+                    </li>
+                    <li>
+                        <p><b>Step 1:</b> Download the Cornerstone theme from BigCommerce and place it in the 'www' or '.htdocs' folder (depending on your local server client) on your device</p>
+                    </li>
+                    <li>
+                        <p><b>Step 2:</b> Once downloaded, open the program, and run it with following command:</p>
+                        <p class="code"><code>npm install -g @bigcommerce/stencil-cli</code></p>
+                        <p>Just as you run this command, the Cornerstone theme installation will begin.</p>
+                        <p>Once done, you will be asked for the URL of your ecommerce store's homepage, username and API account details of your BigCommerce store and the port on which you wish to run this server</p>
+                        <p>As you provide these details, a secure connection will be created for your custom theme development with Stencil CLI.</p>
+                        <p>Initiate stencil and active the connection.</p>
+                    </li>
+                    <li>
+                        <p><b>Step 3:</b> Whenever you want to work on your custom template, pass following commands in the terminal:</p>
+                        <p class="code"><code>stencil init</code></p>
+                        <p class="code"><code>stencil start</code></p>
+                        <p>This will initiate Stencil CLI and allow you to edit Cornerstone theme on your local server.</p>
+                    </li>
+                    <li>
+                        <p><b>Step 4:</b> Define custom templates to be created in Cornerstone directory such as Category, Brands, Product and Content pages.</p>
+                    </li>
+                    <li>
+                        <p><b>Step 5:</b> Now, with the help of Handlebars, users need to define blank HTML files and folders.</p>
+                        <p>Once you define the folders and files, then map the pages you want to create to specific URL in the .stencil file of your cornerstone theme's version. All of this can be done via the above template.</p>
+                    </li>
+                    <li>
+                        <p><b>Step 6:</b> Since all required template files are mapped to specific URLs, you can easily customize your version and it will be reflected on these URLs.</p>
+                    </li>
+                    <li>
+                        <p><b>Step 7:</b> Once all the customizations are done, you can publish the custom template onto live website.</p>
+                        <p>This is to be done by</p>
+                        <ol>
+                            <li>Creating a theme bundle to compile your theme as a zip file: <code>stencil bundle</code>.</li>
+                            <li>This theme bundle is pushed to live website in the form of a theme package: <code>stencil push</code>.</li>
+                        </ol>
+                    </li>
+                </ul>
+                <p class="imp-note"><b>Note:</b></p>
+                <ul>
+                    <li>
+                        <p>Once the Theme is downloaded make sure that we need to make a local setup in our system and add code changes in the below given files.</p>
+                    </li>
+                </ul> 
+                <br/>
+
+                <h4 class="lp-subtitle">Code Level Changes : Js Files</h4>
+                <ol>
+                    <li>
+                        <p><b>assets/js/theme/product.js</b></p>
+                        <ul>
+                            <li>
+                                <p>To display the product details and offer details from Mirakl to Bigcommerce in PDP page users need to update the code in product.js file.</p>
+                            </li>
+                            <li>
+                                <p>Users should add the below functions at the end of the file.</p>
+                            </li>
+                        </ul> 
+                        <p><b>CODE</b></p>
+                        <p class="code big-code">
+                            <code>
+                                <span>//Mirakl code//</span>
+                                <span>$(document).ready(function(){</span>
+                                <span>var parent_product_sku = $(".product_sku").val();</span>
+                                <span>if(parent_product_sku){</span>
+                                <span>var formData = {product_sku:parent_product_sku};</span>
+                                <span>$('#sellers_list').html('');</span>
+                                <span>$.ajax({</span>
+                                <span>type: "post",</span>
+                                <span>url: 'https://apps.royalcyber.org/mirakl_seller/MiraklPoductOfferDetails',</span>
+                                <span>data: formData,</span>
+                                <span>enctype: 'multipart/form-data',</span>
+                                <span>success: function (data) {</span>
+                                <span>const myJSON = data;</span>
+                                <span>console.log("myJSON",myJSON);</span>
+                                <span>const myObj = JSON.parse(myJSON);</span>
+                                <span>if(myObj.length == 0){</span>
+                                <span>$('#sellers_list').html('No Offers Available');</span>
+                                <span>return false;</span>
+                                <span>}</span>
+                                <span>var list_html ="";</span>
+                                <span>var list = 1;</span>
+                                <span>$.each(myObj,function(obj_key,obj_value){</span>
+                                <span>var price = obj_value['price'];</span>
+                                <span>var seller_qty = obj_value['quantity'];</span>
+                                <span>price = parseFloat(price).toFixed(2);</span>
+                                <span>var qty = obj_value['quantity'];</span>
+                                <span>list_html =list_html + '&lt;div class="oth_seller__row other_seller_container" id="product_offer_'+list+'"&gt;&lt;div class="ship__price"&gt;&lt;div class="sellership_price"&gt;'+price+'&lt;/div&gt;&lt;div class="ship_chg"&gt;&lt;span&gt;+ Shipping charge&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="info__pro_condition"&gt;&lt;div class="pro_condition"&gt;&lt;p&gt;'+obj_value['condition']+'&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="info__qty_seller"&gt;&lt;form action="#" class="qnt_frm"&gt;&lt;label&gt;Qty&lt;/label&gt;&lt;div class="form-increment" data-quantity-change&gt;&lt;button data-sel="'+list+'" data-id="qty_'+list+'" class="button button--icon qty_dec"&gt;&lt;span class="is-srOnly"&gt;dec&lt;/span&gt;&lt;i class="icon" aria-hidden="true"&gt;&lt;svg&gt;&lt;use xlink:href="#icon-keyboard-arrow-down"/&gt;&lt;/svg&gt;&lt;/i&gt;&lt;/button&gt;&lt;input class="form-input form-input--incrementTotal qty_fill" id="qty_'+list+'" name="qty_'+list+'" type="tel" value="1" min="1" pattern="[0-9]*" aria-live="polite"&gt;&lt;button data-sel="'+list+'" data-id="qty_'+list+'" class="button button--icon qty_inc"&gt;&lt;span class="is-srOnly"&gt;inc&lt;/span&gt;&lt;i class="icon" aria-hidden="true"&gt;&lt;svg&gt;&lt;use xlink:href="#icon-keyboard-arrow-up"/&gt;&lt;/svg&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;&lt;/form&gt;&lt;div class="sellername"&gt;&lt;p&gt;Sold by:&lt;/p&gt;&lt;p class="seller_name"&gt;'+obj_value['shop_name']+'&lt;/p&gt;&lt;/div&gt; &lt;div class="offerid"&gt;&lt;input type="hidden" class="mirakl_offer_id" value="'+obj_value['offer_id']+'"&gt;&lt;input type="hidden" class="mirakl_offer_price" value="'+price+'"&gt;&lt;input type="hidden" class="mirakl_seller_name" value="'+obj_value['shop_name']+'"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="oth_seller_atc"&gt;&lt;button class="oth__addcartbtn button button--primary cust_atc" data_seller_qty="'+seller_qty+'" data-ava-id="product_ava_'+list+'" data-id="product_offer_'+list+'" id="atc_'+list+'"&gt;Add to Cart&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="product_ava_'+list+'"&gt;&lt;/div&gt;';</span>
+                                <span>list++;</span>
+                                <span>});</span>
+                                <span>$('#sellers_list').append(list_html);</span>
+                                <span>}</span>
+                                <span>});</span>
+                                <span>}</span>
+                                <span>$(document).on('click','.qty_dec',function(){</span>
+                                <span>var seller_count = $(this).attr('data-sel');</span>
+                                <span>var qty = $('#qty_'+seller_count).val();</span>
+                                <span>if(qty != 1){</span>
+                                <span>var dec_qty = parseInt(qty)-parseInt(1);</span>
+                                <span>$('#qty_'+seller_count).val(dec_qty);</span>
+                                <span>}</span>
+                                <span>});</span>
+                                <span>$(document).on('click','.qty_inc',function(){</span>
+                                <span>var seller_count = $(this).attr('data-sel');</span>
+                                <span>var qty = $('#qty_'+seller_count).val();</span>
+                                <span>var inc_qty = parseInt(qty)+parseInt(1);</span>
+                                <span>$('#qty_'+seller_count).val(inc_qty);</span>
+                                <span>});</span>
+                                <span>$(document).on('click','.cust_atc',function(){</span>
+                                <span>var stock_count = $(this).attr('data_seller_qty');</span>
+                                <span>var offer_id = $(this).parents(".other_seller_container").find(".mirakl_offer_id").val();</span>
+                                <span>var offer_price = $(this).parents(".other_seller_container").find(".mirakl_offer_price").val();</span>
+                                <span>var seller_name = $(this).parents(".other_seller_container").find(".mirakl_seller_name").val();</span>
+                                <span>var offer_qty = $(this).parents(".other_seller_container").find(".qty_fill").val();</span>
+                                <span>var mirakl_offerid_attr = $(".option-MiraklOfferID").attr("attr-id");</span>
+                                <span>var mirakl_sellername_attr = $(".option-SellerName").attr("attr-id");</span>
+                                <span>var variant_option_array = [];</span>
+                                <span>if($('.variant_options').length &gt; 0){</span>
+                                <span>$('.variant_options').each(function(){</span>
+                                <span>var option_id = $(this).attr("attr-id");</span>
+                                <span>var option_value_id = $('select#attribute_select_'+option_id+' option:selected').val();</span>
+                                <span>variant_option_array.push({'option_id': option_id, 'option_value_id': option_value_id});</span>
+                                <span>});</span>
+                                <span>}</span>
+                                <span>if((stock_count) && ((parseInt(offer_qty)) &gt; (parseInt(stock_count)))){</span>
+                                <span>$('#'+$(this).attr('data-ava-id')).html('&lt;p class="text_red"&gt;&lt;span&gt;Not available : &lt;/span&gt;Currently we have only '+stock_count+' products available&lt;/p&gt;');</span>
+                                <span>return false;</span>
+                                <span>}</span>
+                                <span>var post_data = new Object();</span>
+                                <span>post_data.product_id = $(".bc_product_id").val();</span>
+                                <span>post_data.quantity = offer_qty;</span>
+                                <span>post_data.list_price = offer_price;</span>
+                                <span>post_data.offer_id_attr = mirakl_offerid_attr;</span>
+                                <span>post_data.offer_id_value = offer_id;</span>
+                                <span>post_data.seller_name_attr = mirakl_sellername_attr;</span>
+                                <span>post_data.seller_name_value = seller_name;</span>
+                                <span>post_data.variant_option_details = JSON.stringify(variant_option_array);</span>
+                                <span>b2bAddToCart(post_data,stock_count);</span>
+                                <span>});</span>
+                                <span>});</span>
+                                <span>function b2bAddToCart(post_data,stock_count) {</span>
+                                <span>fetch('/api/storefront/cart?include=lineItems.physicalItems.options', {</span>
+                                <span>credentials: 'include'</span>
+                                <span>}).then(function(response) {</span>
+                                <span>return response.json();</span>
+                                <span>}).then(function(myJson) {</span>
+                                <span>var cust_add_to_cart = 1;</span>
+                                <span>let carts = myJson;</span>
+                                <span>if (carts.length &gt; 0) {</span>
+                                <span>if(carts[0]?.lineItems?.physicalItems) {</span>
+                                <span>var cart_physicalItems = carts[0].lineItems.physicalItems;</span>
+                                <span>if (cart_physicalItems.length &gt; 0) {</span>
+                                <span>cart_physicalItems.forEach(function (cart_physicalItem) {</span>
+                                <span>if(cart_physicalItem.productId == post_data.product_id){</span>
+                                <span>var cart_physicalItem_options = cart_physicalItem.options;</span>
+                                <span>if(cart_physicalItem_options.length &gt; 0){</span>
+                                <span>cart_physicalItem_options.forEach(function(cart_physicalItem_option){</span>
+                                <span>if((cart_physicalItem_option.nameId == post_data.offer_id_attr) && (cart_physicalItem_option.valueId == post_data.offer_id_value)){</span>
+                                <span>var cust_total_qty = (parseInt(cart_physicalItem.quantity)) + (parseInt(post_data.quantity));</span>
+                                <span>if((stock_count) && ((parseInt(cust_total_qty)) &gt; (parseInt(stock_count)))){</span>
+                                <span>cust_add_to_cart = 0;</span>
+                                <span>alert('Not available : Currently we have only '+stock_count+' products available, you have already '+cart_physicalItem.quantity+' products in cart.');</span>
+                                <span>return false;</span>
+                                <span>}</span>
+                                <span>}</span>
+                                <span>});</span>
+                                <span>}</span>
+                                <span>}</span>
+                                <span>});</span>
+                                <span>}</span>
+                                <span>}</span>
+                                <span>}</span>
+                                <span>if(cust_add_to_cart == 0){</span>
+                                <span>return false;</span>
+                                <span>}</span>
+                                <span>var cartId='';</span>
+                                <span>if (carts.length &gt; 0) {</span>
+                                <span>cartId=carts[0].id;</span>
+                                <span>}</span>
+                                <span>post_data.cart_id = cartId;</span>
+                                <span>console.log(post_data);</span>
+                                <span>$.ajax({</span>
+                                <span>type: "post",</span>
+                                <span>url: 'https://apps.royalcyber.org/mirakl_seller/AddProductToCart',</span>
+                                <span>enctype: 'multipart/form-data',</span>
+                                <span>data: post_data,</span>
+                                <span>success: function (data) {</span>
+                                <span>var return_response = JSON.parse(data);</span>
+                                <span>console.log("return_response",return_response);</span>
+                                <span>var redirect_url = return_response['cart_url'];</span>
+                                <span>console.log(redirect_url);</span>
+                                <span>window.location.href = redirect_url;</span>
+                                <span>}</span>
+                                <span>});</span>
+                                <span>});</span>
+                                <span>}</span>
+                                <span>//Mirakl code ends//</span>
+                            </code>
+                        </p>
+                        <p><b>Reference screenshot of product.js:</b> We have collapsed both the functions and shown in the below screenshot.</p>
+                        <img src="../include/image/installation-guide/app-install-17.png" class='reference-img'/>
+                    </li>
+                    <br/>
+
+                    <li>
+                        <p><b>assets/js/theme/common/product-details.js</b></p>
+                        <ul>
+                            <li>
+                                <p>Inside <b>productOptionsChanged</b> function users should add given if else condition code once you get the response from the utils api as shown the below screenshot.</p>
+                            </li>
+                        </ul> 
+                        <p><b>CODE</b></p>
+                        <p class="code big-code">
+                            <code>
+                                <span>if(response.data.sku != null){</span>
+                                <span>$('#sellers_list').html('');</span>
+                                <span>var sku = response.data.sku;</span>
+                                <span>var formData = {product_sku:sku};</span>
+                                <span>$.ajax({</span>
+                                <span>type: "post",</span>
+                                <span>url: 'https://apps.royalcyber.org/mirakl_seller/MiraklPoductOfferDetails',</span>
+                                <span>data: formData,</span>
+                                <span>enctype: 'multipart/form-data',</span>
+                                <span>success: function (data) {</span>
+                                <span>const myJSON = data;</span>
+                                <span>const myObj = JSON.parse(myJSON);</span>
+                                <span>var list_html ="";</span>
+                                <span>var list = 1;</span>
+                                <span>$.each(myObj,function(obj_key,obj_value){</span>
+                                <span>var price = obj_value['price'];</span>
+                                <span>var seller_qty = obj_value['quantity'];</span>
+                                <span>price = parseFloat(price).toFixed(2);</span>
+                                <span>var qty = obj_value['quantity'];</span>
+                                <span>list_html =list_html + '&lt;div class="oth_seller__row other_seller_container" id="product_offer_'+list+'"&gt;&lt;div class="ship__price"&gt;&lt;div class="sellership_price"&gt;'+price+'&lt;/div&gt;&lt;div class="ship_chg"&gt;&lt;span&gt;+ Shipping charge&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="info__pro_condition"&gt;&lt;div class="pro_condition"&gt;&lt;p&gt;'+obj_value['condition']+'&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="info__qty_seller"&gt;&lt;form action="#" class="qnt_frm"&gt;&lt;label&gt;Qty&lt;/label&gt;&lt;div class="form-increment" data-quantity-change&gt;&lt;button data-sel="'+list+'" data-id="qty_'+list+'" class="button button--icon qty_dec"&gt;&lt;span class="is-srOnly"&gt;dec&lt;/span&gt;&lt;i class="icon" aria-hidden="true"&gt;&lt;svg&gt;&lt;use xlink:href="#icon-keyboard-arrow-down"/&gt;&lt;/svg&gt;&lt;/i&gt;&lt;/button&gt;&lt;input class="form-input form-input--incrementTotal qty_fill" id="qty_'+list+'" name="qty_'+list+'" type="tel" value="1" data-quantity-min="1" min="1" pattern="[0-9]*" aria-live="polite"&gt;&lt;button data-sel="'+list+'" data-id="qty_'+list+'" class="button button--icon qty_inc"&gt;&lt;span class="is-srOnly"&gt;inc&lt;/span&gt;&lt;i class="icon" aria-hidden="true"&gt;&lt;svg&gt;&lt;use xlink:href="#icon-keyboard-arrow-up"/&gt;&lt;/svg&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;&lt;/form&gt;&lt;div class="sellername"&gt;&lt;p&gt;Sold by:&lt;/p&gt;&lt;p class="seller_name"&gt;'+obj_value['shop_name']+'&lt;/p&gt;&lt;/div&gt; &lt;div class="offerid"&gt;&lt;input type="hidden" class="mirakl_offer_id" value="'+obj_value['offer_id']+'"&gt;&lt;input type="hidden" class="mirakl_offer_price" value="'+price+'"&gt;&lt;input type="hidden" class="mirakl_seller_name" value="'+obj_value['shop_name']+'"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="oth_seller_atc"&gt;&lt;button class="oth__addcartbtn button button--primary cust_atc" data_seller_qty="'+seller_qty+'" data-ava-id="product_ava_'+list+'" data-id="product_offer_'+list+'" id="atc_'+list+'"&gt;Add to Cart&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="product_ava_'+list+'"&gt;&lt;/div&gt;';</span>
+                                <span>list++;</span>
+                                <span>});</span>
+                                <span>$('#sellers_list').append(list_html);</span>
+                                <span>}</span>
+                                <span>});</span>
+                                <span>}else{</span>
+                                <span>$('#sellers_list').html('No Offers Available');</span>
+                                <span>}</span>
+                            </code>
+                        </p>
+                        <p><b>Reference Screenshot of product-details.js:</b> We have collapsed our code and shown in the below screenshot.</p>
+                        <img src="../include/image/installation-guide/app-install-18.png" class='reference-img'/>
+                    </li>
+                    <br/>
+
+                    <li>
+                        <p><b>assets/js/theme/cart.js</b></p>
+                        <ul>
+                            <li>
+                                <p>Users need to replace <b>cartUpdate</b> and <b>cartUpdateQtyTextChange</b> functions with the code below. Below is the reference screenshot.</p>
+                            </li>
+                        </ul> 
+                        <p><b>CODE : cartUpdate Function</b></p>
+                        <p class="code big-code">
+                            <code>
+                                <span>cartUpdate($target) {</span>
+                                <span>const itemId = $target.data('cartItemid');</span>
+                                <span>const $el = $(`#qty-${itemId}`);</span>
+                                <span>var this_cart = this;</span>
+                                <span>var product_sku = $("#sku_"+itemId).val();</span>
+                                <span>var product_mirakl_offer_id = $("#offerId_"+itemId).val();</span>
+                                <span>var product_seller_name = $("#sellerName_"+itemId).val();</span>
+                                <span>var formData = {sku:product_sku,offer_id:product_mirakl_offer_id,seller_name:product_seller_name};</span>
+                                <span>$.ajax({</span>
+                                <span>type: "post",</span>
+                                <span>url: 'https://apps.royalcyber.org/mirakl_seller/api/get_inventory_count_cart',</span>
+                                <span>enctype: 'multipart/form-data',</span>
+                                <span>data: formData,</span>
+                                <span>success: function (response) {</span>
+                                <span>const cartQtyJSON = response;</span>
+                                <span>const cartQty = JSON.parse(cartQtyJSON);</span>
+                                <span>const maxQty = cartQty['avalible_qty'];</span>
+                                <span>this_cart.$activeCartItemId = itemId;</span>
+                                <span>this_cart.$activeCartItemBtnAction = $target.data('action');</span>
+                                <span>const oldQty = parseInt($el.val(), 10);</span>
+                                <span>const minQty = parseInt($el.data('quantityMin'), 10);</span>
+                                <span>const minError = $el.data('quantityMinError');</span>
+                                <span>const maxError = 'The maximum purchasable quantity is '+maxQty;</span>
+                                <span>const newQty = $target.data('action') === 'inc' ? oldQty + 1 : oldQty - 1;</span>
+                                <span>if (newQty &lt; minQty) {</span>
+                                <span>return showAlertModal(minError);</span>
+                                <span>} else if (maxQty &gt; 0 && newQty &gt; maxQty) {</span>
+                                <span>return showAlertModal(maxError);</span>
+                                <span>}</span>
+                                <span>this_cart.$overlay.show();</span>
+                                <span>utils.api.cart.itemUpdate(itemId, newQty, (err, response) =&gt; {</span>
+                                <span>this_cart.$overlay.hide();</span>
+                                <span>if (response.data.status === 'succeed') {</span>
+                                <span>const remove = (newQty === 0);</span>
+                                <span>this_cart.refreshContent(remove);</span>
+                                <span>} else {</span>
+                                <span>$el.val(oldQty);</span>
+                                <span>showAlertModal(response.data.errors.join('\n'));</span>
+                                <span>}</span>
+                                <span>});</span>
+                                <span>}</span>
+                                <span>});</span>
+                                <span>}</span>
+                            </code>
+                        </p>
+
+                        <p><b>CODE : cartUpdateQtyTextChange Function</b></p>
+                        <p class="code big-code">
+                            <code>
+                                <span>cartUpdateQtyTextChange($target, preVal = null) {</span>
+                                <span>const itemId = $target.data('cartItemid');</span>
+                                <span>const $el = $(`#qty-${itemId}`);</span>
+                                <span>var this_cart = this;</span>
+                                <span>var product_sku = $("#sku_"+itemId).val();</span>
+                                <span>var product_mirakl_offer_id = $("#offerId_"+itemId).val();</span>
+                                <span>var product_seller_name = $("#sellerName_"+itemId).val();</span>
+                                <span>var formData = {sku:product_sku,offer_id:product_mirakl_offer_id,seller_name:product_seller_name};</span>
+                                <span>$.ajax({</span>
+                                <span>type: "post",</span>
+                                <span>url: 'https://apps.royalcyber.org/mirakl_seller/api/get_inventory_count_cart',</span>
+                                <span>enctype: 'multipart/form-data',</span>
+                                <span>data: formData,</span>
+                                <span>success: function (response) {</span>
+                                <span>const cartQtyJSON = response;</span>
+                                <span>const cartQty = JSON.parse(cartQtyJSON);</span>
+                                <span>const maxQty = cartQty['avalible_qty'];</span>
+                                <span>const minQty = parseInt($el.data('quantityMin'), 10);</span>
+                                <span>const oldQty = preVal !== null ? preVal : minQty;</span>
+                                <span>const minError = $el.data('quantityMinError');</span>
+                                <span>const maxError = 'The maximum purchasable quantity is '+maxQty;</span>
+                                <span>const newQty = parseInt(Number($el.val()), 10);</span>
+                                <span>let invalidEntry;</span>
+                                <span>if (!newQty) {</span>
+                                <span>invalidEntry = $el.val();</span>
+                                <span>$el.val(oldQty);</span>
+                                <span>return showAlertModal(this_cart.context.invalidEntryMessage.replace('[ENTRY]', invalidEntry));</span>
+                                <span>} else if (newQty &lt; minQty) {</span>
+                                <span>$el.val(oldQty);</span>
+                                <span>return showAlertModal(minError);</span>
+                                <span>} else if (maxQty &gt; 0 && newQty &gt; maxQty) {</span>
+                                <span>$el.val(oldQty);</span>
+                                <span>return showAlertModal(maxError);</span>
+                                <span>}</span>
+                                <span>this_cart.$overlay.show();</span>
+                                <span>utils.api.cart.itemUpdate(itemId, newQty, (err, response) =&gt; {</span>
+                                <span>this_cart.$overlay.hide();</span>
+                                <span>if (response.data.status === 'succeed') {</span>
+                                <span>const remove = (newQty === 0);</span>
+                                <span>this_cart.refreshContent(remove);</span>
+                                <span>} else {</span>
+                                <span>$el.val(oldQty);</span>
+                                <span>return showAlertModal(response.data.errors.join('\n'));</span>
+                                <span>}</span>
+                                <span>});</span>
+                                <span>}</span>
+                                <span>});</span>
+                                <span>}</span>
+                            </code>
+                        </p>
+                        <p><b>Reference Screenshot of cart.js:</b> We have collapsed our code and shown in the below screenshot.</p>
+                        <img src="../include/image/installation-guide/app-install-19.png" class='reference-img'/>
+                    </li>
+                    <br/>
+
+                    <li>
+                        <p><b>assets/js/them/account.js</b></p>
+                        <ul>
+                            <li>
+                                <p>Users should add the below script at the end of the file to get changes of my account page. Refer the below screenshot.</p>
+                            </li>
+                        </ul> 
+                        <p><b>CODE</b></p>
+                        <p class="code big-code">
+                            <code>
+                                <span>$(document).ready(function(){</span>
+                                <span>$(".bc_order_id").each(function( index ) {</span>
+                                <span>var bc_order_id = $(this).val();</span>
+                                <span>$.post("https://apps.royalcyber.org/mirakl_seller/api/get_mirakl_order_details.php",{</span>
+                                <span>bc_order_id: bc_order_id,</span>
+                                <span>},</span>
+                                <span>function(data){</span>
+                                <span>const myJSON = data;</span>
+                                <span>const myObj = JSON.parse(myJSON);</span>
+                                <span>var mirakl_order_status_array = [];</span>
+                                <span>mirakl_order_status_array['STAGING'] = 'Fraud Check Pending';</span>
+                                <span>mirakl_order_status_array['WAITING_ACCEPTANCE'] = 'Pending Acceptance';</span>
+                                <span>mirakl_order_status_array['REFUSED'] = 'Rejected';</span>
+                                <span>mirakl_order_status_array['WAITING_DEBIT'] = 'Pending Debit';</span>
+                                <span>mirakl_order_status_array['WAITING_DEBIT_PAYMENT'] = 'Debit in Pro</span>
+                                <span>mirakl_order_status_array['PAYMENT_COLLECTED'] = 'Customer Payment Collected';</span>
+                                <span>mirakl_order_status_array['SHIPPING'] = 'Shipping in Progress';</span>
+                                <span>mirakl_order_status_array['TO_COLLECT'] = 'To Collect';</span>
+                                <span>mirakl_order_status_array['SHIPPED'] = 'Shipped';</span>
+                                <span>mirakl_order_status_array['RECEIVED'] = 'Received';</span>
+                                <span>mirakl_order_status_array['INCIDENT_OPEN'] = 'Incident Open';</span>
+                                <span>mirakl_order_status_array['INCIDENT_CLOSED'] = 'Incident Closed';</span>
+                                <span>mirakl_order_status_array['CLOSED'] = 'Closed';</span>
+                                <span>mirakl_order_status_array['CANCELED'] = 'Canceled';</span>
+                                <span>mirakl_order_status_array['REFUNDED'] = 'Refunded';</span>
+                                <span>var total_order_price = 0;</span>
+                                <span>var tbl_content = '&lt;div class="Rtable-row Rtable-row--head"&gt;&lt;div class="Rtable-cell date-cell column-heading"&gt;&lt;div class="date_clm Rtable-row--heading"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="Rtable-cell topic-cell column-heading"&gt;Order&lt;/div&gt;&lt;div class="Rtable-cell access-link-cell column-heading"&gt;&lt;div class="ord--subTotal Rtable-row--heading"&gt;&lt;span&gt;Total&lt;/span&gt;&lt;/div&gt;&lt;/div&gt; &lt;div class="Rtable-cell replay-link-cell column-heading"&gt;&lt;div class="date_clm Rtable-row--heading"&gt;&lt;span&gt;Ship To&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="Rtable-cell shop-cell column-heading"&gt;Shop&lt;/div&gt;&lt;div class="Rtable-cell status-cell column-heading"&gt;Status&lt;/div&gt;&lt;div class="Rtable-cell status-cell column-heading"&gt;Action&lt;/div&gt;&lt;/div&gt;';</span>
+                                <span>var grand_total_line_price = 0;</span>
+                                <span>$.each(myObj,function(obj_key,obj_value){</span>
+                                <span>var converteddate = obj_value['created_date'];</span>
+                                <span>var convertedtime = Date.parse(converteddate);</span>
+                                <span>var convertdate = new Date(convertedtime);</span>
+                                <span>var mirakl_order_dt = convertdate.getDate()+'-'+(convertdate.getMonth()+1)+'-'+convertdate.getFullYear();</span>
+                                <span>var mirakl_order_id = obj_value['id'];</span>
+                                <span>var mirakl_shipfirstName = obj_value['customer']['shipping_address']['firstname'];</span>
+                                <span>var mirakl_shiplastName = obj_value['customer']['shipping_address']['lastname'];</span>
+                                <span>var mirakl_shop = obj_value['shop_name'];</span>
+                                <span>var mirakl_ordStaus = mirakl_order_status_array[obj_value['status']['state']];</span>
+                                <span>var mirak_companyName = obj_value['customer']['shipping_address']['company'];</span>
+                                <span>var mirak_orderCity = obj_value['customer']['shipping_address']['city'];</span>
+                                <span>var mirak_orderCountry = obj_value['customer']['shipping_address']['country'];</span>
+                                <span>var mirak_orderSate = obj_value['customer']['shipping_address']['state'];</span>
+                                <span>var mirak_orderZip = obj_value['customer']['shipping_address']['zip_code'];</span>
+                                <span>var mirak_orderAddress_1 = obj_value['customer']['shipping_address']['street_1'];</span>
+                                <span>var mirak_orderAddress_2 = obj_value['customer']['shipping_address']['street_2'];</span>
+                                <span>var mirak_shippmthName = obj_value['shipping']['type']['label']+' - '+obj_value['shipping']['type']['code'];</span>
+                                <span>var shipment_section = '';</span>
+                                <span>if(obj_value['shipping']['tracking_number'] != undefined){</span>
+                                <span>var mirak_orderShipment_id = obj_value['shipping']['tracking_number'];</span>
+                                <span>var mirak_orderShipment_name = obj_value['shipping']['carrier'];</span>
+                                <span>var mirak_orderShipment_url = obj_value['shipping']['tracking_url'];</span>
+                                <span>var shipment_section = '&lt;div class="ship_mth_ctn"&gt;&lt;h4&gt;Shipment Details&lt;/h4&gt;&lt;p&gt;Carrier Name : '+mirak_orderShipment_name+'&lt;/p&gt;&lt;p&gt;Tracking Number : &lt;a target="_blank" href="'+mirak_orderShipment_url+'"&gt;'+mirak_orderShipment_id+'&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;';</span>
+                                <span>}</span>
+                                <span>var total_line_price = 0;</span>
+                                <span>tbl_content = tbl_content+'&lt;div class="miral_order_details_modal"&gt;&lt;div id="mirakl-od-popup_'+mirakl_order_id+'" class="mirakl_modal-box"&gt;&lt;header&gt; &lt;div class="ord_modal_cls_btn"&gt; &lt;a href="javascript:void(0);" class="mod-js-modal-close close"&gt;X&lt;/a&gt; &lt;/div&gt; &lt;div class="ord_modal_heading"&gt; &lt;h3&gt;Order Details&lt;/h3&gt; &lt;/div&gt; &lt;div class="ord_modal_dt"&gt; &lt;div class="ord_modal_shipp_dt"&gt;&lt;span&gt;ordered on&lt;/span&gt;&lt;p&gt; '+mirakl_order_dt+'&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;/header&gt;&lt;div class="mirakl_modal-body"&gt;&lt;section class="ord_clm ship_dtl"&gt; &lt;h4&gt;Shipping Address&lt;/h4&gt; &lt;ul class="display_shipadd"&gt; &lt;li class="display_shipadd fullname"&gt;'+mirakl_shipfirstName+" "+mirakl_shiplastName +'&lt;/li&gt; &lt;li class="display_shipadd address_line1"&gt;'+mirak_companyName+'&lt;/li&gt; &lt;li class="display_shipadd address_line1"&gt;'+mirak_orderAddress_1+'&lt;/li&gt; &lt;li class="display_shipadd address_line1"&gt;'+mirak_orderAddress_2+'&lt;/li&gt; &lt;li class="display_shipadd address_city"&gt;'+mirak_orderCity+" "+mirak_orderSate+" "+mirak_orderZip+'&lt;/li&gt; &lt;li class="display_shipadd address_cont"&gt;'+mirak_orderCountry+'&lt;/li&gt;&lt;/ul&gt;&lt;div class="ship_mth_ctn"&gt;&lt;h4&gt;Shipping</span>
+                                <span>Methods&lt;/h4&gt;&lt;p&gt;'+mirak_shippmthName+'&lt;/p&gt;&lt;/div&gt;'+shipment_section+' &lt;/section&gt;&lt;section class="line_orderdtl_clm"&gt;';</span>
+                                <span>var total_line_order_tax = 0;</span>
+                                <span>var total_line_order_product_shipping_price = 0;</span>
+                                <span>$.each(obj_value['order_lines'],function(obj_line_key,obj_line_value){</span>
+                                <span>var line_order_qty = obj_line_value['quantity'];</span>
+                                <span>var line_ordersku = obj_line_value['offer']['product']['sku'];</span>
+                                <span>var line_order_producttitle = obj_line_value['offer']['product']['title'];</span>
+                                <span>var line_order_product_price = parseFloat(obj_line_value['offer']['price']).toFixed(2);</span>
+                                <span>var line_order_product_price_qty = (parseInt(line_order_qty)*parseFloat(line_order_product_price)).toFixed(2);</span>
+                                <span>var line_order_product_shipping_price = parseFloat(obj_line_value['shipping_price']).toFixed(2);</span>
+                                <span>total_line_order_product_shipping_price = (parseFloat(total_line_order_product_shipping_price) + parseFloat(line_order_product_shipping_price)).toFixed(2);</span>
+                                <span>var line_order_price = obj_line_value['total_price'];</span>
+                                <span>var line_order_tax = obj_line_value['taxes'][0]['amount'];</span>
+                                <span>total_line_order_tax = (parseFloat(total_line_order_tax) + parseFloat(line_order_tax)).toFixed(2);</span>
+                                <span>var line_order_totalprice = (parseFloat(line_order_price) + parseFloat(line_order_tax)).toFixed(2);</span>
+                                <span>total_line_price = (parseFloat(total_line_price) + parseFloat(line_order_totalprice)).toFixed(2);</span>
+                                <span>tbl_content = tbl_content+'&lt;div class="line_orders_row"&gt;&lt;ul class="ords_itms"&gt; &lt;li&gt;&lt;b&gt;'+line_order_qty+ '&lt;/b&gt; X ' +line_order_producttitle+'&lt;/li&gt; &lt;li&gt;'+line_ordersku+'&lt;/li&gt; &lt;/ul&gt; &lt;div class="prod_price"&gt; &lt;p&gt;'+line_order_product_price_qty+'&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;';</span>
+                                <span>});</span>
+                                <span>grand_total_line_price = (parseFloat(grand_total_line_price) + parseFloat(total_line_price)).toFixed(2);</span>
+                                <span>total_order_price = (parseFloat(total_order_price) + parseFloat(total_line_price)).toFixed(2);</span>
+                                <span>tbl_content = tbl_content+'&lt;div class="total_price_ctn"&gt; &lt;ul class="coun_totalshptax"&gt; &lt;li&gt; &lt;span&gt;Tax:&lt;/span&gt;&lt;p&gt; '+parseFloat(total_line_order_tax).toFixed(2)+'&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Shipping:&lt;/span&gt;&lt;p&gt;'+total_line_order_product_shipping_price+'&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;span&gt;Total price:&lt;/span&gt; &lt;p&gt;'+grand_total_line_price+'&lt;/p&gt; &lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;';</span>
+                                <span>tbl_content = tbl_content+'&lt;div class="Rtable-row"&gt; &lt;div class="Rtable-cell date-cell"&gt; &lt;div class="Rtable-cell--content"&gt;&lt;div class="Rtable-cell--content title_hd_btn"&gt;Marketplace&lt;/div&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class="Rtable-cell topic-cell"&gt; &lt;div class="Rtable-cell--content replay-link-content"&gt;'+mirakl_order_id+'&lt;/div&gt; &lt;/div&gt; &lt;div class="Rtable-cell access-link-cell"&gt; &lt;div class="Rtable-cell--content title-content"&gt;&lt;b&gt;$'+total_line_price+'&lt;/b&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class="Rtable-cell replay-link-cell"&gt; &lt;div class="Rtable-cell--content title-content"&gt;'+mirakl_shipfirstName+" "+mirakl_shiplastName +'&lt;/div&gt; &lt;/div&gt; &lt;div class="Rtable-cell shop-cell"&gt; &lt;div class="Rtable-cell--content title-content"&gt;'+mirakl_shop+'&lt;/div&gt; &lt;/div&gt; &lt;div class="Rtable-cell status-cell"&gt; &lt;div class="Rtable-cell--content title-content"&gt;'+mirakl_ordStaus+'&lt;/div&gt; &lt;/div&gt; &lt;div class="Rtable-cell status-cell"&gt; &lt;div class="cust_orderDetail_popup Rtable-cell--content title-content" data-modal-id="mirakl-od-popup_'+mirakl_order_id+'"&gt;&lt;button&gt;View Details&lt;/button&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;';</span>
+                                <span>tbl_content = tbl_content+'&lt;/div&gt;';</span>
+                                <span>});</span>
+                                <span>tbl_content = tbl_content+'&lt;div class="Rtable-row green-bg"&gt; &lt;div class="Rtable-cell date-cell"&gt; &lt;div class="Rtable-cell--content"&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class="Rtable-cell topic-cell"&gt; &lt;div class="Rtable-cell--content replay-link-content"&gt;&lt;b&gt;Total Price&lt;/b&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class="Rtable-cell access-link-cell"&gt; &lt;div class="Rtable-cell--content title-content"&gt;&lt;b&gt;$'+total_order_price+'&lt;/b&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class="Rtable-cell replay-link-cell"&gt; &lt;div class="Rtable-cell--content title-content"&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class="Rtable-cell shop-cell"&gt; &lt;div class="Rtable-cell--content title-content"&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class="Rtable-cell status-cell"&gt; &lt;div class="Rtable-cell--content title-content"&gt;&lt;/div&gt; &lt;/div&gt;&lt;div class="Rtable-cell status-cell"&gt; &lt;div class="Rtable-cell--content title-content"&gt;&lt;/div&gt;&lt;/div&gt;';</span>
+                                <span>tbl_content = tbl_content+'&lt;/div&gt;';</span>
+                                <span>$("#table_"+bc_order_id).append(tbl_content);</span>
+                                <span>});</span>
+                                <span>});</span>
+                                <span>$(document).on('click','.cust_orderDetail_popup', function(e) {</span>
+                                <span>var appendthis = ("&lt;div class='mod_modal-overlay mod-js-modal-close'&gt;&lt;/div&gt;");</span>
+                                <span>e.preventDefault();</span>
+                                <span>$("body").append(appendthis);</span>
+                                <span>$("body").addClass("modal-open");</span>
+                                <span>$(".mod_modal-overlay").fadeTo(500, 0.9);</span>
+                                <span>$(".js-modalbox").fadeIn(500);</span>
+                                <span>var modalBox = $(this).attr('data-modal-id');</span>
+                                <span>$('#'+modalBox).fadeIn($(this).data());</span>
+                                <span>$(".mod-js-modal-close, .mod_modal-overlay").click(function() {</span>
+                                <span>$(".mirakl_modal-box, .mod_modal-overlay").fadeOut(500, function() {</span>
+                                <span>$(".mod_modal-overlay").remove();</span>
+                                <span>$("body").removeClass("modal-open");</span>
+                                <span>});</span>
+                                <span>});</span>
+                                <span>$(window).resize(function() {</span>
+                                <span>$(".mirakl_modal-box").css({</span>
+                                <span>top: ($(window).height() - $(".mirakl_modal-box").outerHeight()) / 2,</span>
+                                <span>left: ($(window).width() - $(".mirakl_modal-box").outerWidth()) / 2</span>
+                                <span>});</span>
+                                <span>});</span>
+                                <span>$(window).resize();</span>
+                                <span>});</span>
+                                <span>});</span>
+                            </code>
+                        </p>
+                        <p><b>Reference Screenshot of account.js:</b> We have collapsed our code and shown in the below screenshot.</p>
+                        <img src="../include/image/installation-guide/app-install-20.png" class='reference-img'/>
+                    </li>
+                    <br/>
+                </ol>
+
+                <h4 class="lp-subtitle">Code Level Changes : HTML Files</h4>
+                <ol>
+                    <li>
+                        <p><b>templates/components/products/product-view.html</b></p>
+                        <ul>
+                            <li>
+                                <p>Update the below piece code inside product-view.html file where you want to display the product offers from Mirakl.</p>
+                            </li>
+                            <li>
+                                <p>You can add inside the form between productView-options div and share component as shown in the reference screenshot.</p>
+                            </li>
+                        </ul> 
+                        <p><b>CODE</b></p>
+                        <p class="code">
+                            <code>
+                                <span></span>&lt;!--Mirakl Seller Section Renders here--&gt;</span>
+                                <span>&lt;input type="hidden" class="product_sku" value="{{product.sku}}"&gt;</span>
+                                <span>&lt;div class="oth__seller_ctn"&gt;</span>
+                                <span>&lt;h3 class="sub--headig"&gt;Offers&lt;/h3&gt;</span>
+                                <span>&lt;div id="sellers_list"&gt;No Offers Available&lt;/div&gt;</span>
+                                <span>&lt;/div&gt;</span>
+                                <span>&lt;!--Mirakl Seller Section Renders here--&gt;</span>
+                            </code>
+                        </p>
+                        <p><b>Reference Screenshot of product-view.html:</b></p>
+                        <img src="../include/image/installation-guide/app-install-21.png" class='reference-img'/>
+                        <br/>
+                        <ul>
+                            <li>
+                                <p>Users should add the given class name inside the already existing &lt;input&gt; tag as shown in the screenshot below.</p>
+                            </li>
+                        </ul> 
+                        <p><b>CODE</b></p>
+                        <p class="code">
+                            <code>class="bc_product_id"</code>
+                        </p>
+                        <p><b>Reference Screenshot of product-view.html:</b></p>
+                        <img src="../include/image/installation-guide/app-install-22.png" class='reference-img'/>
+                    </li>
+                    <br/>
+
+                    <li>
+                        <p><b>templates/components/products/options/input-text.html</b></p>
+                        <ul>
+                            <li>
+                                <p>Users should add our additional class and add attr-id attribute to the parent div.</p>
+                            </li>
+                        </ul> 
+                        <p><b>CODE</b></p>
+                        <p class="code"><code>&lt;div class="form-field option-{{#replace ' ' this.display_name }}{{/replace}}" data-product-attribute="input-text" attr-id="{{id}}"&gt;</code></p>
+                        <p><b>Reference Screenshot to update parent div in input-text.html:</b></p>
+                        <img src="../include/image/installation-guide/app-install-23.png" class='reference-img'/>
+                        <br/>
+                        <ul>
+                            <li>
+                                <p>Add data-id attribute inside input tag. Replace the below code and refer to the screenshot.</p>
+                            </li>
+                        </ul> 
+                        <p><b>CODE</b></p>
+                        <p class="code"><code>data-id="{{#replace ' ' this.display_name }}{{/replace}}"</code></p>
+                        <p><b>Reference Screenshot to update input tag in input-text.html:</b></p>
+                        <img src="../include/image/installation-guide/app-install-24.png" class='reference-img'/>
+                    </li>
+                    <br/>
+
+                    <li>
+                        <p><b>templates/components/products/options/set-select.html</b></p>
+                        <ul>
+                            <li>
+                                <p>Users should add additional class name and add attr-id attribute to the parent div.</p>
+                            </li>
+                        </ul> 
+                        <p><b>CODE</b></p>
+                        <p class="code"><code>&lt;div class="form-field variant_options" data-product-attribute="set-select" attr-id="{{id}}"&gt;</code></p>
+                        <p><b>Reference Screenshot of parent div in set-select.html:</b></p>
+                        <img src="../include/image/installation-guide/app-install-25.png" class='reference-img'/>
+                    </li>
+                    <br/>
+
+                    <li>
+                        <p><b>templates/components/cart/content.html</b></p>
+                        <ul>
+                            <li>
+                                <p>Add a piece of code inside each condition as per screenshot below.</p>
+                            </li>
+                        </ul> 
+                        <p><b>CODE</b></p>
+                        <p class="code"><code>{{ assignVar "cust_cart_id" id }}</code></p>
+                        <p><b>Reference Screenshot of content.html:</b></p>
+                        <img src="../include/image/installation-guide/app-install-26.png" class='reference-img'/>
+
+                        <ul>
+                            <li>
+                                <p>Add below piece of code as per screenshot</p>
+                            </li>
+                        </ul> 
+                        <p><b>CODE</b></p>
+                        <p class="code"><code>&lt;input type="hidden" value="{{sku}}" name="sku_{{getVar 'cust_cart_id'}}" id="sku_{{getVar 'cust_cart_id'}}"&gt;</code></p>
+                        <p><b>Reference Screenshot of content.html:</b></p>
+                        <img src="../include/image/installation-guide/app-install-27.png" class='reference-img'/>
+
+                        <ul>
+                            <li>
+                                <p>Add below piece of code inside options as shown in the screenshot below.</p>
+                            </li>
+                        </ul> 
+                        <p><b>CODE</b></p>
+                        <p class="code">
+                            <code>
+                                <span>{{#if name '===' 'Mirakl Offer ID'}}</span>
+                                <span>&lt;input type="hidden" value="{{value}}" name="offerId_{{getVar 'cust_cart_id'}}" id="offerId_{{getVar 'cust_cart_id'}}"&gt;</span>
+                                <span>{{/if}}</span>
+                                <span>{{#if name '===' 'Seller Name'}}</span>
+                                <span>&lt;input type="hidden" value="{{value}}" name="sellerName_{{getVar 'cust_cart_id'}}" id="sellerName_{{getVar 'cust_cart_id'}}"&gt;</span>
+                                <span>{{/if}</span>
+                            </code>
+                        </p>
+                        <p><b>Reference Screenshot of content.html:</b></p>
+                        <img src="../include/image/installation-guide/app-install-28.png" class='reference-img'/>
+                    </li>
+                    <br/>
+
+                    <li>
+                        <p><b>templates/components/account/orders-list.html</b></p>
+                        <ul>
+                            <li>
+                                <p>Add the below piece of code before &lt;/li&gt; tag ends.</p>
+                            </li>
+                        </ul> 
+                        <p><b>CODE</b></p>
+                        <p class="code">
+                            <code>
+                                <span></span>&lt;!--Mirakl Order Section Renders here--&gt;</span>
+                                <span>&lt;input type="hidden" class="bc_order_id" value="{{this.id}}"&gt;</span>
+                                <span>&lt;div class="Rtable Rtable--5cols Rtable--collapse" id="table_{{this.id}}"&gt;&lt;/div&gt;</span>
+                                <span>&lt;!--Mirakl Order Section Renders here--&gt;</span>
+                            </code>
+                        </p>
+                        <p><b>Reference Screenshot of order-list.html:</b></p>
+                        <img src="../include/image/installation-guide/app-install-29.png" class='reference-img'/>
+                    </li>
+                    <br/>
+                </ol>
+                
+                <h4 class="lp-subtitle">Code Level Changes : CSS Files</h4>
+                <ul>
+                    <li>
+                        <p>Users should create a new scss file inside the given path <b>assets\scs\connectorstyle.scss</b>. Once the connectorstyle.scss file is created we need to add the code from given link below</p>
+                        <p><a download target="_blank" href="https://apps.royalcyber.org/mirakl_seller/include/css/connectorstyle.scss" >connectorstyle.scss</a></p>
+                    </li>
+                    <li>
+                        <p>Once this file is pushed to the menstioned path, we need to import that file inside <b>assets\scss\theme.scss</b>.Below is the import statement for the same.</p>
+                        <p><b>CODE</b></p>
+                        <p class="code">
+                            <code>@import "connectorstyle.scss";</code>
+                        </p>
+                        <p><b>Reference Screenshot of theme.scss:</b></p>
+                        <img src="../include/image/installation-guide/app-install-30.png" class='reference-img'/>
+                    </li>
+                </ul>
+                <br/>
+            </main>
+        </div>
+        <br/>
+        <footer class="border-top">
+            <p class="text-center text-muted">Copyright ©2023 Royal Cyber Inc. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
+<style>
+    .installation-guide p{margin-bottom: 10px;}
+    .lp-title{font-weight:bold;color:#2966af;}
+    .lp-subtitle{color:#2966af;}
+    .imp-note{color:red;}
+    .reference-img{margin-bottom: 10px;}
+    code span{display: block;}
+    .big-code{height:250px; overflow-y: scroll;padding: 10px;background-color: #000;}
+    .code{padding: 10px;background-color: #000;}
+    footer p{margin:16px;}
+</style>

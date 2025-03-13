@@ -1,0 +1,307 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="../include/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../include/css/style.css">
+
+        <script src="../include/js/bootstrap.bundle.min.js"></script>
+        <script src="../include/js/jquery.min.js"></script>
+        <script src="../include/js/bootstrap.min.js"></script>
+        <script src="../include/js/script.js"></script>
+        <title>Mirakl Seller App Connector - Installation Guide</title>
+    </head>
+    <body>
+        <div class="main-wrapper cust_loader cust_loader_off">
+          <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button>
+        </div>
+        <div class="db__wraper" id="body-pd">
+            <header class="header" id="header">
+              <div class="header_toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+              </div>
+              <div class="header_toggle">
+                <a href="javascript:void(0);">RC Marketplace Seller Connector</a>
+              </div>
+              <div class="header_img">
+                <a href="javascript:void(0);">
+                  <!-- <i class='bx bxs-cog'></i> -->
+                </a>
+              </div>
+            </header>
+            <div class="l-navbar" id="nav-bar">
+                <nav class="nav">
+                  <div>
+                    <div class="nav_list">
+                      <a href="https://apps.royalcyber.org/mirakl_seller/applp/installation-guide.html" class="nav_link">
+                          <i class='bx bx-cube'></i>
+                        <span class="nav_name">Installation Guide</span>
+                      </a>
+                      <a href="https://apps.royalcyber.org/mirakl_seller/applp/user-guide.html" class="nav_link">
+                          <i class='bx bx-cart-add'></i>
+                        <span class="nav_name">User Guide</span>
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            <!--Container Main start-->
+            <main class="col-md-11 ms-sm-auto col-lg-12 px-md-1 installation-guide">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2 lp-title">Seller User Guide</h1>
+                </div>
+                <h4 class="lp-subtitle">Introduction:</h4>
+                <p>The RC Marketplace Connector App helps leverage the data flow between Mirakl and BigCommerce and will help data real time sync up between different systems.</p>
+                <p>Our Connector App has smart pre-built API connection that takes the pain out of consuming custom platform integrations to handle different Seller Catalog Data like product, offers and let customers place the orders and hold unified management of products, orders etc. within the app.</p>
+                <p>Here is the step-by-step guide to manage categories, products and order sync up from Mirakl to BigCommerce store. After the app is installed, the app is ready to use.</p>
+
+                <ol>
+                    <li>
+                        <p>Once the ‘RC Marketplace Connector’ app gets installed, you should see the ‘Mirakl and BC Configuration Form.</p>
+                        <img src="../include/image/user-guide-seller/user-guide-seller-img-1.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>If you are a seller, you have to select the user type as Seller.</p> 
+                        <img src="../include/image/user-guide-seller/user-guide-seller-img-2.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Get the Mirakl Credentials (i.e., Mirakl API URL and Seller API key) and enter the credentials in their respective input boxes and click the Connection Check button.</p>
+                        <img src="../include/image/user-guide-seller/user-guide-seller-img-3.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Once your connection is validated successfully, then click on the Save Credentials button.</p>
+                        <img src="../include/image/user-guide-seller/user-guide-seller-img-4.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Once the credentials are saved you should see the RC Marketplace Connector App Dashboard page</p>
+                    </li>
+                    <p>The RC Marketplace Connector home page provides a quick summary of the Products, Offers and Orders sync up between BigCommerce and Mirakl. You can see the total count of each Products, Offers and Orders synced between them.</p>
+                </ol>
+
+                <h4 class="lp-subtitle">The User can see the following three sections on the App Dashboard screen:</h4>
+                <ol>
+                    <li>
+                        <p>The <b><u>Products</u></b> section helps users to know the total number of products synced from BigCommerce to Mirakl.</p>
+                    </li>
+                    <li>
+                        <p>The <b><u>Offers</u></b> section helps users to know the total number of offers synced between BigCommerce to Mirakl.</p>
+                    </li>
+                    <li>
+                        <p>The <b><u>Orders</u></b> section helps users to know the total number of orders synced between Mirakl and BigCommerce.</p>
+                        <img src="../include/image/user-guide-seller/user-guide-seller-img-5.jpg" class='reference-img'/>
+                    </li>
+                </ol>
+
+                <div>
+                    <h4 class="lp-subtitle"><b><u>Seller Product Sync:</u></b></h4>
+                    <p>The product listing page shows the list of products synced between BigCommerce to Mirakl.</p>
+                    <img src="../include/image/user-guide-seller/user-guide-seller-img-6.jpg" class='reference-img'/>
+                    <h5>In the products list table column refers to:</h5>
+                    <ul>
+                        <li>
+                            <p><b>File Name:</b> is the unique name of the imported csv file from BigCommerce to Mirakl.</p>
+                        </li>
+                        <li>
+                            <p><b>Created:</b> is the created date and time of the import csv file from BigCommerce to Mirakl.</p>
+                        </li>
+                        <li>
+                            <p><b>Import ID: </b> is the unique Mirakl import id of the product csv file from Mirakl.</p>
+                        </li>
+                        <li>
+                            <p><b>Sync Status:</b>is the status of synchronize between BigCommerce and Mirakl.</p>
+                        </li>
+                        <li>
+                            <p><b>Action/status :</b>is the live time status of synchronize and shows if an error occurred between BigCommerce and Mirakl.</p>
+                            <img src="../include/image/user-guide-seller/user-guide-seller-img-7.jpg" class='reference-img'/>
+                        </li>
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                       <p> The left side menu helps the user synchronize the data manually from BigCommerce to Mirakl using synchronize buttons as shown in the screenshot below:</p>
+                        <img src="../include/image/user-guide-seller/user-guide-seller-img-8.jpg" class='reference-img'/>
+                    </li>
+                </ul> 
+                <div>
+                    <h4 class="lp-subtitle">Field Mapping from BigCommerce to Mirakl:</h4>
+                    <ul>
+                        <li>
+                            <p><b><u>Step 1:</u></b> Users must create a custom field in products called ‘marketplace’ and the value should be ‘true’. Only these products will be synced to Mirakl.</p>
+                        </li>
+                        <li>
+                            <p><b><u>Step 2:</u></b> Users must download the csv file from the left side menu <b>Mapping CSV file.</b></p>
+                        </li>
+                        <li>
+                            <p><b><u>Step 3:</u></b> User login to Mirakl seller account and navigate to My Account-> Mapping Configuration.</b></p>
+                            <img src="../include/image/user-guide-seller/user-guide-seller-img-9.jpg" class='reference-img'/>
+                        </li>
+                        <li>
+                            <p><b><u>Step 4:</u></b> Users need to map the fields under ‘Use the Mapping Wizard’.</b></p>
+                            <img src="../include/image/user-guide-seller/user-guide-seller-img-10.jpg" class='reference-img'/>
+                        </li>
+                        
+                        <li>
+                            <p><b><u>Step 5:</u></b> Users need to Upload the downloaded file (step 1) and click next step.</b></p>
+                            <img src="../include/image/user-guide-seller/user-guide-seller-img-11.jpg" class='reference-img'/>
+                        </li>
+                        <li>
+                            <p><b><u>Step 6:</u></b> Categorization</b></p>
+                            <img src="../include/image/user-guide-seller/user-guide-seller-img-12.jpg" class='reference-img'/>
+                        </li>
+                        <li>
+                            <p><b><u>Step 7:</u></b> Category mapping.</b></p>
+                            <img src="../include/image/user-guide-seller/user-guide-seller-img-13.jpg" class='reference-img'/>
+                        </li>
+                        <li>
+                            <p><b><u>Step 8:</u></b> Attributes mapping.</b></p>
+                            <img src="../include/image/user-guide-seller/user-guide-seller-img-14.jpg" class='reference-img'/>
+                        </li>
+                        <li>
+                            <p><b><u>Step 9:</u></b> Attributes mapping.</b></p>
+                            <img src="../include/image/user-guide-seller/user-guide-seller-img-15.jpg" class='reference-img'/>
+                        </li>
+                        <li>
+                            <p><b><u>Step 10:</u></b> Define rules.</b></p>
+                            <img src="../include/image/user-guide-seller/user-guide-seller-img-16.jpg" class='reference-img'/>
+                        </li>
+                        <li>
+                            <p><b><u>Step 11:</u></b> Summary and validation.</b></p>
+                            <img src="../include/image/user-guide-seller/user-guide-seller-img-17.jpg" class='reference-img'/>
+                        </li>
+                        <li>
+                            <p><b><u>Step 12:</u></b> Once the mapping process is done, then come to the Connector app and click <b>Product(BC to Mirakl)</b> synchronize button, this will synchronize the product from Bigcommerce to Mirakl.</b></p>
+                            <img src="../include/image/user-guide-seller/user-guide-seller-img-18.jpg" class='reference-img'/>
+                        </li>
+                        <li>
+                            <p><b><u>Step 13:</u></b> Users can manually sync the status from Mirakl to BigCommerce by clicking the <b>'Product Import Status Sync'</b> button.</b></p>
+                        </li>
+                        <li>
+                            <p><b><u>Step 14:</u></b> Users can check the import status of the products by clicking the View button. Users can also download the error report files, uploaded files, transaction files etc., in the popup window.</b></p>
+                            <img src="../include/image/user-guide-seller/user-guide-seller-img-7.jpg" class='reference-img'/>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="lp-subtitle"><b><u> Seller Offer Sync:</u></b></h4>
+                    <p>Offer listing page shows the list of offers Synchronized from BigCommerce to Mirakl.</p>
+                    <img src="../include/image/user-guide-seller/user-guide-seller-img-19.jpg" class='reference-img'/>
+                    <h5>In the products list table column refers to:</h5>
+                    <ul>
+                        <li>
+                            <p><b>Product Name:</b> this is the name of the product which is created in Mirakl.</p>
+                        </li>
+                        <li>
+                            <p><b>Shop SKU:</b> is the SKU id of the product from BigCommerce. </p>
+                        </li>
+                        <li>
+                            <p><b>Variant SKU: </b>is the Variant SKU id of the product from BigCommerce. </p>
+                        </li>
+                        <li>
+                            <p><b>Qty:</b>is the inventory of the products from BigCommerce.</p>
+                        </li>
+                        <li>
+                            <p><b>Offer Price:</b>This is the Price of the products from BigCommerce.</p>
+                        </li>
+                        <li>
+                            <p><b>Discount Price: </b>This is the sale price of the products from BigCommerce.</p>
+                        </li>
+                        <li>
+                            <p><b>Created at: </b>This is the time of the offers synchronized in Mirakl.</p>
+                        </li>
+                        <li>
+                            <p><b>Action/status :</b>The left side menu helps the user synchronize the data manually from BigCommerce to Mirakl using synchronize buttons as shown in the screenshot below: </p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>The left side menu helps the user synchronize the data manually from BigCommerce to Mirakl using synchronize buttons as shown in the screenshot below:</p>
+                            <img src="../include/image/user-guide-seller/user-guide-seller-img-20.jpg" class='reference-img'/>
+                        </li>
+                        <li>
+                            <p>Users can also manually Synchronize the offers from BigCommerce to Mirakl by clicking on the <b>Offers (BC to Mirakl) Synchronize</b> button.</p>
+                        </li>
+                        <li>
+                            <p>Users can check the import status of the offers by clicking the View button. Users can also download the error report files from the pop-up window if there is any error in offers or Synchronization.</p>
+                            <img src="../include/image/user-guide-seller/user-guide-seller-img-21.jpg" class='reference-img'/>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="lp-subtitle"><b><u>Seller Order Sync:</u></b></h4>
+                    <p>The order listing page shows the list of orders synced between Mirakl to BigCommerce.</p>
+                    <img src="../include/image/user-guide-seller/user-guide-seller-img-22.jpg" class='reference-img'/>
+                    <h5>In the products list table column refers to:</h5>
+                    <ul>
+                        <li>
+                            <p><b>Mirakl Order ID:</b> is the unique order ID created when the order is placed in Mirakl</p>
+                        </li>
+                        <li>
+                            <p><b>Mirakl Order Status:</b> is the status of the order in Mirakl. When the status of the order changes in Mirakl that corresponding status is shown here.</p>
+                        </li>
+                        <li>
+                            <p><b>BC Order ID: </b>is the order ID generated when the order is placed in BigCommerce. </p>
+                        </li>
+                        <li>
+                            <p><b>BC Order Status:</b>shows the corresponding status of the order to the user. When the status of the order is changed in BigCommerce that corresponding status is shown here.</p>
+                        </li>
+                        <li>
+                            <p><b>Processing Status from Mirakl:</b>When the order/status is placed in Mirakl that order needs to be synced up in BigCommerce. Before the order/status is synced from Mirakl to BigCommerce the processing status will be <b>Pending</b>. Once the order/status is synced from Mirakl to BigCommerce the processing status is changed to <b>Completed</b>.</p>
+                        </li>
+                        <li>
+                            <p><b>Processing Status from BC: </b>When the status is changed in BigCommerce the order status needs to be synchronized in Mirakl. Before the status is synchronized from BigCommerce to Mirakl the processing status will be Pending. Once the status is synchronized from BigCommerce to Mirakl the processing status is changed to <b>Completed</b>.</p>
+                        </li>
+                        <li class="order_notes">
+                            <p><b>Note: </b></p>
+                            <p class="y-bg">he below order status from Mirakl is not going to be synchronized from Mirakl to BigCommerce</p>
+                            <ol>
+                                <li class="y-bg">Waiting Acceptance.</li>
+                                <li class="y-bg">Waiting Debit Payment .</li>
+                                <li class="y-bg">Refused</li>
+                                <li class="y-bg">Cancelled</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <p>
+                        The left side menu helps the user synchronize the data manually from BigCommerce to Mirakl using synchronize buttons as shown in the screenshot below: 
+                        <img src="../include/image/user-guide-seller/user-guide-seller-img-23.jpg" class='reference-img'/>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>Users can also manually Synchronize the orders/status from Mirakl to BigCommerce and the status from BigCommerce to Mirakl by clicking on the <b>Orders (BC to Mirakl) Synchronize</b>button.</p>
+                        </li>
+                        <li>
+                            <p>
+                                Users can manually sync the status from Mirakl to BigCommerce and vice-versa by clicking the ,<b>‘Orders Status Sync’ Synchronize</b> button.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            <p>Thanks for using RC Marketplace App.</p>
+            </main>
+        </div>
+        <footer class="border-top">
+            <p class="text-center text-muted">Copyright ©2023 Royal Cyber Inc. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
+<style>
+    img{margin-top: 0.75rem; width: 100%; max-width: 1100px;  min-height:543px;}
+    .installation-guide p{margin-bottom: 10px;}
+    .lp-title{font-weight:bold;color:#2966af;}
+    .lp-subtitle{color:#2966af;}
+    .imp-note{color:red;}
+    .reference-img{margin-bottom:1rem;}
+    code span{display: block;}
+    .big-code{height:250px; overflow-y: scroll;padding: 10px;background-color: #000;}
+    .code{padding: 10px;background-color: #000;}
+    footer p{margin:16px;}
+    .y-bg{background-color: yellow;}
+    .order_notes > ol > li{margin-bottom: .25rem;}
+</style>

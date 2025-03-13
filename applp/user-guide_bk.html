@@ -1,0 +1,203 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="../include/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../include/css/style.css">
+
+        <script src="../include/js/bootstrap.bundle.min.js"></script>
+        <script src="../include/js/jquery.min.js"></script>
+        <script src="../include/js/bootstrap.min.js"></script>
+        <script src="../include/js/script.js"></script>
+        <title>Mirakl App Connector - Installation Guide</title>
+    </head>
+    <body>
+        <div class="main-wrapper cust_loader cust_loader_off">
+          <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button>
+        </div>
+        <div class="db__wraper" id="body-pd">
+            <header class="header" id="header">
+              <div class="header_toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+              </div>
+              <div class="header_toggle">
+                <a href="javascript:void(0);">RC Marketplace Connector</a>
+              </div>
+              <div class="header_img">
+                <a href="javascript:void(0);">
+                  <!-- <i class='bx bxs-cog'></i> -->
+                </a>
+              </div>
+            </header>
+            <div class="l-navbar" id="nav-bar">
+                <nav class="nav">
+                  <div>
+                    <div class="nav_list">
+                      <a href="https://apps.royalcyber.org/MiraklConnector-Ph3/applp/installation-guide.html" class="nav_link">
+                          <i class='bx bx-cube'></i>
+                        <span class="nav_name">Installation Guide</span>
+                      </a>
+                      <a href="https://apps.royalcyber.org/MiraklConnector-Ph3/applp/user-guide.html" class="nav_link">
+                          <i class='bx bx-cart-add'></i>
+                        <span class="nav_name">User Guide</span>
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            <!--Container Main start-->
+            <main class="col-md-11 ms-sm-auto col-lg-12 px-md-1 installation-guide">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2 lp-title">User Guide</h1>
+                </div>
+                <h4 class="lp-subtitle">Introduction:</h4>
+                <p>The RC Marketplace Connector App helps leverage the data flow between Mirakl and BigCommerce and will help data real time sync up between different systems.</p>
+                <p>Our Connector App has smart pre-built API connection that takes the pain out of consuming custom platform integrations to handle different Seller Catalog Data like product, offers and let customers place the orders and hold unified management of products, orders etc. within the app.</p>
+                <p>Here is the step-by-step guide to manage categories, products and order sync up from Mirakl to BigCommerce store. After the app is installed, the app is ready to use.</p>
+
+                <ol>
+                    <li>
+                        <p>Once the ‘RC Marketplace Connector’ app gets installed, you should see the ‘Mirakl and BC Configuration Form.</p>
+                        <img src="../include/image/user-guide/user-guide-img1.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Get the Mirakl Credentials (I.e., Mirakl API URL and Front API key) and enter the credentials in respective input boxes and click the <b>Connection check button</b>.</p> 
+                        <img src="../include/image/user-guide/user-guide-img2.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Once your connection is validated successfully, then click on the <b>Save Credentials</b> button.</p>
+                        <img src="../include/image/user-guide/user-guide-img3.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Once the credentials are saved you can see the App Dashboard page.
+                            RC Marketplace Connector home page provides a quick summary of categories, products and orders sync up between Mirakl and BigCommerce and you can see the total count of each category, products and orders synced between them.
+                           </p>
+                        <img src="../include/image/user-guide/user-guide-img4.jpg" class='reference-img'/>
+                    </li>
+                </ol>
+                <br/>
+
+                <h4 class="lp-subtitle">Initial synchronization:</h4>
+                <ol>
+                    <li>
+                        <p>In your BigCommerce store you must delete all the Category and Products present in your BigCommerce store.</p>
+                    </li>
+                    <li>
+                        <p>First you need to synchronize the Category from Mirakl to BigCommerce by clicking the <b>Category Sync</b> button and wait for complete the synchronization process. Once synchronization is completed you can see the synchronized categories in your BigCommerce Product Categories menu.</p>
+                        <img src="../include/image/installation-guide/app-install-7.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Next you need to synchronize the Products from Mirakl to BigCommerce by clicking the <b>Product sync</b> button and wait for the synchronization process to complete. Once synchronization is completed you can see the synchronized products in your BigCommerce Product View menu</p>
+                        <img src="../include/image/installation-guide/app-install-8.jpg" class='reference-img'/>
+                    </li>
+                    <li>
+                        <p>Once the synchronization process is done, it will show Initial Sync done like below.</p>
+                        <img src="../include/image/installation-guide/app-install-9.jpg" class='reference-img'/>
+                    </li>
+                </ol>
+                <p class="imp-note"><b>Note:</b></p>
+                <ul>
+                    <li>
+                        <b>During this synchronization process please do not refresh or close the browser tab until the synchronization process is complete.</b>
+                    </li>
+                    <li>
+                        <b>For the synchronization process, it will take some time to synchronize based on the category and products present in your Mirakl store</b>
+                    </li>
+                </ul> 
+                <br/>
+
+                <h4 class="lp-subtitle">User can see the following 3 sections on the app dashboard screen:</h4>
+                <ol>
+                    <li>
+                        <p><b><u>Category</u>:</b> section helps users to know total number of categories synced from Mirakl to BigCommerce. Category sync up is done initially from Mirakl to BigCommerce when the app is installed.</p>
+                    </li>
+                    <li>
+                        <p><b><u>Products</u>:</b> section helps users to know total number of products synced from Mirakl to BigCommerce.Product sync up is done initially from Mirakl to BigCommerce when the app is installed.
+                        <br/>
+                        When users click on the Products it will take you to the product listing page as shown in the screenshot below.
+                            </p>
+                        <img src="../include/image/user-guide/user-guide-img5.png" class='reference-img'/>
+                    </li>
+                    
+                        <ul>
+                            <li>
+                                <p>Product listing page shows the list of products synced between Mirakl to BigCommerce.</p>
+                            </li>
+                            <li>
+                                <p>In the products list table each column refers to:</p>
+                                <p><b>• Mirakl ID:</b>It is the unique id of product from Mirakl.</p>
+                                <p><b>•	Product Name:</b> It is the name of the product, which is created in Mirakl, and these products are synced from Mirakl to BigCommerce with the same name.</p>
+                                <p><b>• Product SKU:</b>It is the SKU id of the product from Mirakl.</p>
+                                <p><b>• BC ID: </b>It is the BigCommerce product id which is created when product is created in BigCommerce.</p>
+                            </li>
+                            <li>
+                                <p>Left side summary section helps the user to synchronize the data manually from Mirakl to BigCommerce using synchronize buttons as in the below screenshot.</p>
+                                <img src="../include/image/user-guide/user-guide-img6.jpg" class='reference-img'/>
+                                <p>Category, Products, and Orders data gets automatically synced up from Mirakl to BigCommerce in real time using CRON job. Data gets automatically synced for every single minute using the CRON job.</p>
+                                <p>If the user wants to sync the data manually between them, you can go and click on the <b>Synchronize</b> button which is given.</p>
+
+                                <p><b>•	Synchronize Product (Mirakl to BC):</b> This synchronize button helps to synchronize the product data from Mirakl to BigCommerce.</p>
+                                <p><b>•	Synchronize Category (Mirakl to BC):</b> This synchronize button helps to synchronize the category data from Mirakl to BigCommerce.</p>
+                                <p><b>•	Synchronize Mirakl Product Synchronization: </b>  Once the seller creates the product in Mirakl, that product should be accepted by the Mirakl Operator. Once the product is accepted, you need an API to synchronize the product. This synchronize button helps you to synchronize the product in Mirakl.</p>
+                            </li>
+
+                        <p class="imp-note"><b>Note:</b></p>
+              
+                        <p>When the product data changes in the Mirakl Dashboard that corresponding data is automatically synced up to BigCommerce using the <b>Marketplace Connector App</b>. This Sync up happens automatically through CRON job or can be done <b>manually using Synchronize</b> buttons.</p>
+                 
+                        </ul>
+                    
+                    <li>
+                        <p><b><u>Orders</u>:</b> section helps users to know total number of orders placed from BigCommerce to Mirakl and order status flow from Mirakl to BigCommerce. When users click on the Orders it will lead you to the Orders listing page as shown below.</p>
+                        <img src="../include/image/user-guide/user-guide-img7.png" class='reference-img'/>
+                        <ul>
+                            <li>
+                                <p>Order listing page shows the list of orders synced from BigCommerce to Mirakl.</p>
+                            </li>
+                            <li>
+                                <p>In the orders list table each column refers to:</p> 
+                                <p><b>•	BC Order ID:</b>It is the order id which is created when the order is placed in BigCommerce.</p>
+                                <p><b>•	BC Order Status:</b> It shows the corresponding status of the order to the user. When the status of the order is changed in BigCommerce that corresponding status is shown here.</p>
+                                <p><b>•	Mirakl Order ID:</b>It is the unique order id created when the order is placed in Mirakl.</p>
+                                <p><b>•	Mirakl Order Status:</b>It is the status of the order in Mirakl. When the status of the order changes in Mirakl that corresponding status is shown here.</p>
+                                <p><b>•	Processing Status:</b> When the order is placed in BigCommerce that order needs to be synced up in Mirakl. Before the order is synced from BigCommerce to Mirakl the processing status will be <b>pending</b>. Once the order is synced from BigCommerce to Mirakl the processing status is changed to <b>completed</b>.</p>
+                            </li>
+                            <li>
+                                <p>Left side summary section helps the user to synchronize the order data manually from BigCommerce to Mirakl and Mirakl to BigCommerce using synchronize buttons as in the below screenshot.</p>
+                                <img src="../include/image/user-guide/user-guide-img8.png" class='reference-img'/>
+                                <p>Once the order is placed in BigCommerce, that order should be synced up into Mirakl. This Sync up is done automatically through the CRON job. For every minute CRON jobs runs and helps to sync the data automatically.</p>
+                                <p><b>•	Synchronize Orders (BigC to Mirakl):</b> Orders can also be synced manually by clicking on Synchronize Orders (BigC to Mirakl) button. Orders are Synchronized from BigCommerce to Mirakl.</p>
+                                <p><b>•	Synchronize Orders Status (Mirakl to BigC):</b> Once the order is created in Mirakl operator will change the status of the order based on the processing of the order. This corresponding status is synced from Mirakl to BigCommerce manually by clicking on Synchronize Order Status (Mirakl to BigCommerce).</p>
+                             </li>
+                        </ul>
+                    </li>
+                </ol>
+            <br/>
+
+          <p>If you have any questions the RC Marketplace Apps team is standing by to answer and help you with the installation. Please feel free to contact our support team.</p>
+
+          <p>Thanks for using RC Marketplace App.</p>
+            </main>
+        </div>
+        <br/>
+        <footer class="border-top">
+            <p class="text-center text-muted">Copyright ©2023 Royal Cyber Inc. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
+<style>
+    .installation-guide p{margin-bottom: 10px;}
+    .lp-title{font-weight:bold;color:#2966af;}
+    .lp-subtitle{color:#2966af;}
+    .imp-note{color:red;}
+    .reference-img{margin-bottom: 10px;}
+    code span{display: block;}
+    .big-code{height:250px; overflow-y: scroll;padding: 10px;background-color: #000;}
+    .code{padding: 10px;background-color: #000;}
+    footer p{margin:16px;}
+</style>
